@@ -297,9 +297,6 @@ a.bbtool:hover img {
 .forumnav-fc-desc {
 	background: #2a2a2a;
 }
-.white {
-	color: var(--theme-background-color) !important;
-}
 .guestbook-char-counter {
 	color: var(--theme-foreground-color) !important;
 }
@@ -1273,15 +1270,8 @@ body.main-page {
 .localized {
 	border-bottom: 2px dotted #66ef00;
 }
-.the-dialog {
-	background-color: var(--theme-background-color) !important;
-	border: 1px solid var(--theme-text-color) !important;
-}
 .the-dialog .close a {
 	color: var(--theme-text-color) !important;
-}
-.the-dialog .header h1 {
-	border-bottom: 1px solid var(--theme-background-color) !important;
 }
 img {
 	border: 1px solid #eaeaea;
@@ -1550,27 +1540,11 @@ body .landscape-grid .wrapper a:hover .short-desc {
 	color: #0091d1;
 }
 .message-container-only-errors {
-	background: #d8e4eb;
-}
-.message-container-only-errors {
 	border: #c00000 1px solid;
 	background-color: var(--theme-background-color) !important;
 }
-.ui-autocomplete {
-	background-color: var(--theme-background-color) !important;
-	border-left: 1px solid var(--theme-foreground-color) !important;
-	border-right: 1px solid var(--theme-foreground-color) !important;
-	border-bottom: 1px solid var(--theme-foreground-color) !important;
-}
-.ui-autocomplete .ui-menu-item {
-	border-bottom: 1px solid #ececec;
-	color: #df6300;
-}
 .ui-autocomplete .focused {
 	background-color: #f7f7f7;
-}
-.new-footer {
-	color: var(--theme-main-color);
 }
 .availability-notes-high {
 	background: #ffc;
@@ -1659,16 +1633,9 @@ ul.topbar-nav-sub li.highlight a {
 .botbar-mod-panel a {
 	color: #777;
 }
-.botbar-mod-panel a:hover {
-	background-color: var(--theme-text-color) !important;
-	color: var(--theme-background-color) !important;
-}
 .botbar-mod-panel h3 {
 	background-color: #fad7d6;
 	color: #900;
-}
-.botbar-mod-panel {
-	background-color: var(--theme-background-color) !important;
 }
 .dimtext {
 	color: var(--theme-foreground-color) !important;
@@ -1893,9 +1860,6 @@ div.approvemedia-links a:hover {
 .new-footer {
 	color: var(--theme-main-color);
 }
-.localized {
-	border-bottom: 2px dotted #66ef00;
-}
 .old-template-body .orange-button {
 	color: var(--theme-background-color) !important;
 }
@@ -1914,9 +1878,6 @@ div.approvemedia-links a:hover {
 .ui-autocomplete .ui-menu-item {
 	border-bottom: 1px solid #ececec;
 	color: #df6300;
-}
-.ui-autocomplete .focused {
-	background-color: #f7f7f7;
 }
 label.validator-success {
 	color: #090;
@@ -1943,9 +1904,6 @@ label.validator-failure {
 	background-color: var(--theme-background-color) !important;
 	border: 1px solid var(--theme-text-color) !important;
 }
-.the-dialog .close a {
-	color: var(--theme-text-color) !important;
-}
 .the-dialog .header h1 {
 	border-bottom: 1px solid var(--theme-background-color) !important;
 }
@@ -1968,16 +1926,9 @@ label.validator-failure {
 #footer .footer-language .selected {
 	color: #df6300;
 }
-.botbar-mod-panel a {
-	color: #777;
-}
 .botbar-mod-panel a:hover {
 	background-color: var(--theme-text-color) !important;
 	color: var(--theme-background-color) !important;
-}
-.botbar-mod-panel h3 {
-	background-color: #fad7d6;
-	color: #900;
 }
 .botbar-mod-panel {
 	background-color: var(--theme-background-color) !important;
