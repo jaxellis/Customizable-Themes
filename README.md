@@ -23,7 +23,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 				<a href="https://www.crunchyroll.com/"><img src="https://www.google.com/s2/favicons?domain=crunchyroll.com"/> Crunchyroll</a>
 			</td>
 			<td>
-				<a href="https://github.com/jaxellis/Customizable-Themes/themes/crunchyroll.com/">Link</a>
+				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/crunchyroll.com/">Link</a>
 			</td>
 		</tr>
 		<tr>
@@ -31,7 +31,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 				<a href="https://www.lotro-wiki.com/"><img src="https://www.google.com/s2/favicons?domain=lotro-wiki.com"/> Lotro Wiki</a>
 			</td>
 			<td>
-				<a href="https://github.com/jaxellis/Customizable-Themes/themes/lotro-wiki.com/"> Link</a>
+				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/lotro-wiki.com/"> Link</a>
 			</td>
 		</tr>
 		<tr></tr>
