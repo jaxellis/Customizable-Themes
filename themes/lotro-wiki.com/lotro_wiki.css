@@ -6,6 +6,7 @@ Defaults:
 	--theme-background-color: rgb(0, 0, 0);
 	--theme-foreground-color: rgb(15, 15, 15);
 	--theme-main-color: rgb(0, 190, 255);
+	--theme-main-used-color: rgb(0, 190, 255);
 	--theme-text-color: rgb(197, 197, 197);
 */
 :root {

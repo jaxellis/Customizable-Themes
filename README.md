@@ -7,7 +7,7 @@
 
 Collection of customizable themes for sites I visit. :root variables allowing for easy modification to make the theme enjoyable for yourself.
 
-#### Supported Pages
+## Supported Pages
 
 <!--pages-->
 <table>
