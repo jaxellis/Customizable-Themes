@@ -16,7 +16,12 @@ Defaults:
 	--theme-main-used-color: rgb(0, 190, 255);
 	--theme-text-color: rgb(197, 197, 197);
 }
-
+li::marker {
+	color: var(--theme-main-color);
+}
+ul {
+    list-style-image: unset;
+}
 .mw-rcfilters-ui-filterTagMultiselectWidget-wrapper-content-title {
 	color: var(--theme-text-color);
 }
@@ -120,19 +125,19 @@ Defaults:
 }
 .ns-100 #content,
 .ns-101 #content {
-	background-color: #f3f3ff;
+	background-color: var(--theme-foreground-color);
 }
 .ns-100 div.thumb,
 .ns-101 div.thumb {
-	border-color: #f3f3ff;
+	border-color: var(--theme-foreground-color);
 }
 .ns-102 #content,
 .ns-103 #content {
-	background-color: #f3f3ff;
+	background-color: var(--theme-foreground-color);
 }
 .ns-102 div.thumb,
 .ns-103 div.thumb {
-	border-color: #f3f3ff;
+	border-color: var(--theme-foreground-color);
 }
 .ns-108 #content,
 .ns-109 #content {
@@ -522,16 +527,22 @@ div.itemtooltip li.detail,
 div.itemtooltip li.stats,
 div.itemtooltip li.onuse,
 table.altRows th {
-	background-color: #bbbbff;
+	background-color: var(--theme-background-color);
+}
+table.altRowsMed.centerTableFirst {
+    border: 1px solid silver;
+}
+td, th {
+    border-top: 1px inset silver;
 }
 table.altRows tr.odd {
 	background-color: var(--theme-background-color);
 }
 table.altRows tr.even {
-	background-color: #eeeeff;
+	background-color: var(--theme-foreground-color);
 }
 table.altRowsMed tr.even {
-	background-color: #eeeeff;
+	background-color: var(--theme-foreground-color);
 }
 table.altRowsMed2 th {
 	background-color: #bbbbff;
@@ -543,7 +554,7 @@ table.altRowsMed2 tr.even {
 	background-color: var(--theme-background-color);
 }
 table.altRowsMed th {
-	background-color: #bbbbff;
+	background-color: var(--theme-foreground-color);
 }
 table.altRowsMed tr.odd {
 	background-color: var(--theme-background-color);
@@ -569,7 +580,7 @@ table.altRowsCenter tr.even {
 table.altRowsMP {
 	border: 3px ridge silver;
 	background-color: black;
-	color: moccasin;
+	color: var(--theme-text-color);
 }
 table.altRowsMP caption {
 	color: teal;
@@ -595,7 +606,7 @@ table.altRowsMP tr.even {
 	background-color: #222222;
 }
 table.stocktable {
-	border: 3px outset lightgray;
+	border: 1px solid var(--theme-main-color)
 }
 table.stocktable caption {
 	color: black;
@@ -1311,7 +1322,7 @@ legend {
 	}
 	.wikitable > tr > th,
 	.wikitable > * > tr > th {
-		background-color: #eaecf0;
+		background-color: var(--theme-background-color);
 	}
 	.error {
 		color: #d33;
