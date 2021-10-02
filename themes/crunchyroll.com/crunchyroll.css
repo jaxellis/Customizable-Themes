@@ -738,7 +738,6 @@ td.td-fp-links {
 .modnote textarea.desc {
 	border: 1px solid var(--theme-background-color) !important;
 	background-color: #ffc;
-	border: 1px solid #ffc;
 }
 .modnote textarea.desc-selected {
 	border: 1px solid var(--theme-background-color) !important;
