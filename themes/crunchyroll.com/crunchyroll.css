@@ -1276,10 +1276,6 @@ img {
 .secondary {
 	color: grey;
 }
-.series-data,
-.small-data {
-	color: grey;
-}
 .new-template-body .block-link:hover,
 .new-template-body .pagination a,
 .new-template-body .para-div a,
@@ -2290,12 +2286,6 @@ html[dir='rtl'] .header-search-autocomplete a {
 .welcome-deal .preorder-tag {
 	background: #f78c25;
 	color: #fff;
-}
-.landscape-grid .wrapper:hover {
-	background: #fff;
-}
-#main_content .landscape-element {
-	background: #fff;
 }
 #sidebar {
 	border-bottom: 1px solid var(--theme-main-color);
