@@ -1037,7 +1037,6 @@ a.user-list-wrapper:hover .user-list {
 	fill: currentColor;
 }
 .erc-events-dropdown__links.state-open {
-	opacity: 1;
 	visibility: visible;
 	-webkit-transform: translate(0);
 	transform: translate(0);
@@ -1055,7 +1054,6 @@ a.user-list-wrapper:hover .user-list {
 	background-color: var(--cx-colors-light-gray);
 }
 .erc-browse-dropdown__content.state-open {
-	opacity: 1;
 	visibility: visible;
 	-webkit-transform: translate(0);
 	transform: translate(0);
@@ -1076,7 +1074,6 @@ a.user-list-wrapper:hover .user-list {
 }
 .erc-browse-dropdown__genres-title {
 	color: var(--cx-colors-scarpa-flow);
-	text-transform: uppercase;
 }
 .erc-user-actions__profile:hover {
 	background-color: var(--cx-colors-alabaster);
@@ -1088,7 +1085,6 @@ a.user-list-wrapper:hover .user-list {
 	background-color: rgba(218, 218, 218, 0.7);
 }
 .erc-mobile-menu__drawer.state-open {
-	opacity: 1;
 	visibility: visible;
 	-webkit-transform: translate(0);
 	transform: translate(0);
@@ -1098,7 +1094,6 @@ a.user-list-wrapper:hover .user-list {
 }
 .erc-mobile-menu__section-title {
 	color: var(--cx-colors-scarpa-flow);
-	text-transform: uppercase;
 }
 .erc-account-menu {
 	background-color: var(--theme-background-color) !important;
@@ -1171,7 +1166,6 @@ a.user-list-wrapper:hover .user-list {
 	background-size: 100%;
 }
 .erc-new-membership-popup__inner::before {
-	top: 0;
 	right: 50%;
 	-webkit-transform: translate(50%, -100%);
 	transform: translate(50%, -100%);
@@ -1211,7 +1205,6 @@ html[dir='rtl'] .erc-new-membership-popup__inner.is-premium::before {
 	color: var(--theme-foreground-color) !important;
 }
 .erc-new-membership-popup__button {
-	text-transform: uppercase;
 	color: var(--theme-background-color) !important;
 	background-color: var(--theme-foreground-color) !important;
 	border: none;
@@ -1235,7 +1228,6 @@ html[dir='rtl'] #new_membership_cta .erc-new-membership-popup__inner::before {
 	left: 1.5rem;
 	right: auto;
 }
-
 .erc-contextual-auth-modal__text {
 	color: #3f4040;
 }
@@ -1275,7 +1267,6 @@ body.main-page {
 img {
 	border: 1px solid #eaeaea;
 }
-
 .new-template-body h3 {
 	border-top: 1px solid var(--theme-foreground-color) !important;
 }
@@ -1604,7 +1595,6 @@ a.framed-photo:hover img {
 }
 ul.topbar-nav-sub {
 	background-color: var(--theme-text-color) !important;
-	clear: both;
 }
 ul.topbar-nav-sub li {
 	list-style-type: none;
@@ -1987,7 +1977,7 @@ label.validator-failure {
 	background-color: var(--theme-background-color) !important;
 }
 .header-menubar li a {
-	color: #363231;
+	color: var(--theme-text-color);
 	transition: color 0.2s ease-out;
 }
 .header-menubar li a:hover,
@@ -2111,4 +2101,225 @@ html[dir='rtl'] .header-search-autocomplete a {
 }
 .opt-in__close {
 	color: #23252b;
+}
+
+/* welcome.css */
+#welcome_announcement {
+	background-color: #f3f3f3;
+	border: 1px solid #bbb;
+}
+#welcome_announcement a {
+	color: #333;
+}
+#welcome_left {
+	border-right: 1px solid #bbb;
+}
+.welcome-block h1,
+.welcome-title-list h1 {
+	border-bottom: 1px solid #bbb;
+	color: #000;
+}
+.welcome-block h1 a,
+.welcome-title-list h1 a {
+	color: #000;
+}
+.welcome-pulse-box a {
+	color: #333;
+}
+.welcome-pulse-box a:hover {
+	background-color: #eee;
+}
+.welcome-forum-category {
+	border-bottom: 1px solid #ddd;
+}
+.welcome-forum-category a {
+	color: #333;
+}
+.show-all-simulcasts-button {
+	background: #ececec;
+	background: linear-gradient(to bottom, #fff 15%, #ececec 100%);
+	border: 1px solid #ccc;
+	color: #3f3f3f;
+}
+.show-all-simulcasts-button:hover {
+	border-color: #aaa;
+}
+.welcome-featured-media .carousel-nav .nav-con span {
+	background-color: #fff;
+}
+.welcome-featured-media .carousel-nav .nav-con.current span,
+.welcome-featured-media .carousel-nav .nav-con:hover span {
+	background-color: #f47622;
+}
+.welcome-media-mug img {
+	background-color: #000;
+	border: 1px solid #ccc;
+}
+.welcome-simulcasts .welcome-simulcasts-collection a {
+	color: #333;
+}
+.welcome-simulcasts .welcome-simulcasts-release {
+	color: #888;
+}
+.welcome-simulcasts .welcome-simulcasts-episode {
+	color: #333;
+}
+.welcome-simulcasts .welcome-simulcasts-episode:hover {
+	background-color: #eee;
+}
+.welcome-latest-videos li .released {
+	color: #888;
+}
+.welcome-latest-videos .series {
+	color: #333;
+}
+.welcome-latest-videos .name {
+	color: #333;
+}
+.welcome-latest-videos .ordernum {
+	color: #888;
+}
+.welcome-crnews-item,
+.welcome-news-item {
+	border-bottom: 1px solid #eee;
+}
+.welcome-crnews-title,
+.welcome-news-title {
+	color: #333;
+}
+.welcome-crnews-mug img,
+.welcome-news-mug img {
+	border: 1px solid #ddd;
+}
+.welcome-crnews-subtitle .byline,
+.welcome-news-subtitle .byline {
+	color: #777;
+}
+.welcome-news-views {
+	color: #fff;
+}
+.welcome-news-views:hover {
+	color: #fff;
+}
+.welcome-crnews-contents .related-site {
+	color: #888;
+}
+.welcome-all-titles a {
+	color: #333;
+}
+.welcome-all-titles a:hover {
+	background-color: #eee;
+}
+.welcome-recent-episodes .welcome-recent-link {
+	border-bottom: 1px solid #ccc;
+}
+.welcome-recent-link a {
+	color: #333;
+}
+.welcome-recent-ep a {
+	color: #888;
+}
+.welcome-recent-desc {
+	color: #888;
+}
+.welcome-countdown-day {
+	border-bottom: 1px solid #bbb;
+}
+.welcome-countdown-items a {
+	color: #333;
+}
+.welcome-countdown-items a:hover {
+	background-color: #eee;
+}
+#welcome_popular_titles a {
+	color: #333;
+}
+#welcome_popular_titles a:hover {
+	background-color: #f7f7f7;
+}
+#welcome_popular_titles strong {
+	border-bottom: 1px solid #ccc;
+}
+.welcome-daily-deal {
+	color: #333;
+}
+.welcome-daily-deal img {
+	border: 1px solid #ccc;
+}
+.welcome-daily-deal .name {
+	color: #333;
+}
+.welcome-daily-deal .prices {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	color: #333;
+}
+.welcome-daily-deal .premium-price {
+	color: #090;
+}
+.welcome-daily-deal .premium-expired {
+	color: #090;
+}
+.welcome-deal-title {
+	background-color: #f78c25;
+}
+.welcome-deal-title:after {
+	border-top: 18px solid transparent;
+	border-left: 10px solid #f78c25;
+	border-bottom: 18px solid transparent;
+}
+.welcome-deal-title a {
+	color: #fff;
+}
+.welcome-deal-savings {
+	background-color: #fff;
+}
+.welcome-deal-savings span {
+	color: #0088c5;
+}
+.welcome-deal .prices {
+	background-color: #fff;
+}
+.welcome-deal .prices:before {
+	border-right: 14px solid #fff;
+	border-top: 28px solid transparent;
+}
+.welcome-deal .prices .premium-price {
+	color: #438007;
+}
+.welcome-deal .prices .premium-retail-price {
+	color: #9f9f9f;
+}
+.welcome-deal .member-price-decorator {
+	background-color: #438007;
+}
+.welcome-deal .member-price-decorator:before {
+	border-right: 5px solid #438007;
+	border-top: 16px solid transparent;
+}
+.welcome-deal .member-price-decorator a {
+	color: #fff;
+}
+.welcome-deal-name {
+	background-color: #3f3f3f;
+}
+.welcome-deal .preorder-tag {
+	background: #f78c25;
+	color: #fff;
+}
+.landscape-grid .wrapper:hover {
+	background: #fff;
+}
+#main_content .landscape-element {
+	background: #fff;
+}
+#sidebar {
+	border-bottom: 1px solid #ccc;
+}
+.series-data,
+.small-data {
+	color: grey;
+}
+a.block-link {
+	color: #3f3f3f;
 }
