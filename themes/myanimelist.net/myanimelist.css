@@ -1,5 +1,5 @@
 /*
-Thanks to Shishi for some of the code!
+Thanks to Shishi & cicerakes for their code!
 
 --------------------------------------------
 Custom Variables: Change Theme With These
@@ -42,14 +42,27 @@ Defaults:
 }
 
 /* START Character Images */
+div#menu::before,
+div#menu::after {
+	background-color: transparent !important;
+}
 
 /* Left Character */
-div#menu::before,
+div#menu:before,
 div#myanimelist::before {
 	background-image: var(--theme-character-left) !important;
 	left: var(--theme-move-left) !important;
 	top: 0% !important;
 	height: 100% !important;
+	content: \"\" !important;
+	width: 100% !important;
+	position: fixed !important;
+	bottom: 0;
+	display: block !important;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: contain !important;
+	z-index: -1 !important;
 }
 
 /* Right Character */
@@ -59,30 +72,6 @@ div#myanimelist::after {
 	right: var(--theme-move-right) !important;
 	top: 0% !important;
 	height: 100% !important;
-}
-
-/* OTHER CODES: Please don't touch these unless you know what you're doing or been directed to. */
-
-div#menu::before,
-div#menu::after {
-	background-color: transparent !important;
-}
-
-div#menu:before,
-div#myanimelist::before {
-	content: \"\" !important;
-	width: 100% !important;
-	position: fixed !important;
-	bottom: 0;
-	display: block !important;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: contain !important;
-	z-index: -1 !important;
-}
-
-div#menu::after,
-div#myanimelist::after {
 	content: \"\" !important;
 	width: 100% !important;
 	position: fixed !important;
@@ -94,128 +83,113 @@ div#myanimelist::after {
 	z-index: -1 !important;
 }
 
-/* Media query for devices above 1024px */
-@media all and (min-device-width: 1025px) {
+/* Media queries */
+@media screen and (min-device-width: 1025px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -45%;
 	}
 }
 
-/* Media query for devices above 1140px */
-@media all and (min-device-width: 1141px) {
+@media screen and (min-device-width: 1141px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -44%;
 	}
 }
 
-/* Media query for devices above 1280px */
-@media all and (min-device-width: 1281px) {
+@media screen and (min-device-width: 1281px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -43%;
 	}
 }
 
-/* Media query for devices above 1366px */
-@media all and (min-device-width: 1367px) {
+@media screen and (min-device-width: 1367px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -41%;
 	}
 }
 
-/* Media query for devices above 1440px */
-@media all and (min-device-width: 1441px) {
+@media screen and (min-device-width: 1441px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -41%;
 	}
 }
 
-/* Media query for devices above 1600px */
-@media all and (min-device-width: 1601px) {
+@media screen and (min-device-width: 1601px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -44%;
 	}
 }
 
-/* Media query for devices above 1680px */
-@media all and (min-device-width: 1681px) {
+@media screen and (min-device-width: 1681px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -40%;
 	}
 }
 
-/* Media query for devices above 1920px */
-@media all and (min-device-width: 1921px) {
+@media screen and (min-device-width: 1921px) {
 	#menu::before,
 	#myanimelist::before {
 		margin-left: -36%;
 	}
 }
 
-/* Media query for devices above 1024px */
-@media all and (min-device-width: 1025px) {
+@media screen and (min-device-width: 1025px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -52%;
 	}
 }
 
-/* Media query for devices above 1140px */
-@media all and (min-device-width: 1141px) {
+@media screen and (min-device-width: 1141px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -48%;
 	}
 }
 
-/* Media query for devices above 1280px */
-@media all and (min-device-width: 1281px) {
+@media screen and (min-device-width: 1281px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -45%;
 	}
 }
 
-/* Media query for devices above 1366px */
-@media all and (min-device-width: 1367px) {
+@media screen and (min-device-width: 1367px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -45%;
 	}
 }
 
-/* Media query for devices above 1440px */
-@media all and (min-device-width: 1441px) {
+@media screen and (min-device-width: 1441px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -44%;
 	}
 }
 
-/* Media query for devices above 1600px */
-@media all and (min-device-width: 1601px) {
+@media screen and (min-device-width: 1601px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -44%;
 	}
 }
 
-/* Media query for devices above 1680px */
-@media all and (min-device-width: 1681px) {
+@media screen and (min-device-width: 1681px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -42%;
 	}
 }
 
-/* Media query for devices above 1920px */
-@media all and (min-device-width: 1921px) {
+@media screen and (min-device-width: 1921px) {
 	#menu::after,
 	#myanimelist::after {
 		margin-right: -40%;
@@ -229,16 +203,10 @@ div#myanimelist::after {
 	background-color: var(--theme-background-color) !important;
 	background-image: var(--theme-background-image) !important;
 	background-position: center bottom !important;
-}
-
-/* OTHER CODES Please don't touch these unless you know what you're doing or been directed to. */
-
-.page-common #headerSmall::after {
-	content: \"\";
+	content: \"\" !important;
 	display: block !important;
 	background-attachment: fixed !important;
 	background-size: cover;
-	content: \\ !important;
 	height: 100% !important;
 	width: 100% !important;
 	position: fixed !important;
@@ -248,12 +216,12 @@ div#myanimelist::after {
 }
 
 .page-common #headerSmall {
-	background-color: transparent;
+	background-color: var(--theme-background-color) !important;
+	background-image: url(data:image/png;base64,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);
 }
 /* END Background */
 
 /* START Footer */
-
 #footer-block {
 	display: none !important;
 }
@@ -283,12 +251,6 @@ body:not(.ownlist):before {
 .page-common #footer-block .footer-link a,
 .page-common #footer-block .footer-recommended .icon-recommended {
 	color: #fff !important;
-}
-.page-common #headerSmall {
-	background-color: var(--theme-background-color) !important;
-}
-.page-common #headerSmall {
-	background-image: url(data:image/png;base64,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);
 }
 .page-common #contentHome {
 	background-color: var(--theme-background-color) !important;
@@ -591,9 +553,6 @@ hr {
 .page-common .header-list.on .header-list-button {
 	color: var(--theme-foreground-color);
 }
-.page-common .header-list .header-list-dropdown {
-	background-color: var(--theme-background-color);
-}
 .page-common .header-list .header-list-dropdown ul li a {
 	background-color: var(--theme-background-color);
 	border-color: var(--theme-foreground-color);
@@ -608,6 +567,7 @@ hr {
 	border-bottom-color: var(--theme-background-color);
 }
 .page-common .header-list .header-list-dropdown {
+	background-color: var(--theme-background-color);
 	border-color: var(--theme-foreground-color);
 	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
 }
@@ -649,8 +609,6 @@ hr {
 }
 .page-common .header-notification-item.new {
 	background-color: #282828;
-}
-.page-common .header-notification-item.new {
 	border-bottom: none;
 }
 .page-common .header-notification-item-content .actions .action-button.accept {
@@ -972,9 +930,6 @@ span[style=' color: #FF0000;'] {
 .top-ranking-table .table-header td:first-of-type {
 	border-color: var(--theme-foreground-color);
 }
-.top-ranking-table .your-score .text.on {
-	color: var(--theme-text-color) !important;
-}
 .top-ranking-table tr.ranking-list td {
 	border-color: #3e3e3e !important;
 }
@@ -991,6 +946,28 @@ span[style=' color: #FF0000;'] {
 .icon-top-ranking-page .next {
 	background-color: var(--theme-foreground-color);
 	color: #fff !important;
+}
+.top-ranking-table .score .text.on {
+	color: var(--theme-text-color);
+}
+.top-ranking-table tr.ranking-list:nth-of-type(odd) td {
+	background-color: #262626;
+}
+.top-ranking-table tr td:last-of-type {
+	border-right: var(--theme-foreground-color) 1px solid;
+}
+.top-ranking-table tr td {
+	border-left: #3e3e3e 1px solid;
+}
+/*Seasonal Anime Archive*/
+.season .anime-seasonal-byseason td {
+	border: #3e3e3e 1px solid !important;
+}
+.season .anime-seasonal-byseason tr:nth-of-type(odd) {
+	background-color: var(--theme-background-color);
+}
+.season .anime-seasonal-byseason tr {
+	background-color: #262626;
 }
 /* > Status Buttons */
 .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status {
@@ -1394,9 +1371,6 @@ div[style='background-color:#f6f6f6'] {
 .anime-detail-header-stats .stats-block:before {
 	background-color: #4e4e4e !important;
 	box-shadow: none;
-}
-.anime-detail-header-stats .stats-block .information {
-	border-color: #5e5e5e !important;
 }
 .user-status-block .form-user-status {
 	background-color: var(--theme-background-color) !important;
@@ -3247,11 +3221,6 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	border: #262626 1px solid;
 	color: #888;
 }
-.pmessage-checked-action .pmessage-checked-action-button {
-	background-color: #262626;
-	border: #262626 1px solid;
-	color: #888;
-}
 .pmessage-checked-action .pmessage-checked-action-button:hover {
 	background-color: var(--theme-foreground-color);
 	color: #fff;
@@ -3260,35 +3229,7 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 .reviews-horiznav-nav-sort-block {
 	border-bottom: 1px solid #5e5e5e;
 }
-/*top anime and manga page */
-.top-ranking-table .table-header td {
-	background-color: var(--theme-foreground-color);
-}
-.top-ranking-table tr.ranking-list td {
-	background-color: var(--theme-background-color);
-}
-.top-ranking-table .score .text.on {
-	color: var(--theme-text-color);
-}
-.top-ranking-table tr.ranking-list:nth-of-type(odd) td {
-	background-color: #262626;
-}
-.top-ranking-table tr td:last-of-type {
-	border-right: var(--theme-foreground-color) 1px solid;
-}
-.top-ranking-table tr td {
-	border-left: #3e3e3e 1px solid;
-}
-/*Seasonal Anime Archive*/
-.season .anime-seasonal-byseason td {
-	border: #3e3e3e 1px solid !important;
-}
-.season .anime-seasonal-byseason tr:nth-of-type(odd) {
-	background-color: var(--theme-background-color);
-}
-.season .anime-seasonal-byseason tr {
-	background-color: #262626;
-}
+
 /*featured articles page*/
 .news.featured .featured-search-side .featured-search-input-text {
 	width: 223px;
@@ -3340,11 +3281,7 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	border: #3e3e3e 1px solid;
 }
 .page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell {
-	background-color: #e1e7f5;
-	border: none;
 	color: var(--theme-main-color);
-}
-.page-advertising .ad-spec-sample-button-block .ad-spec-sample-button-cell {
 	background-color: #1a1a1a;
 	border: none;
 	border-top: solid 1px #3e3e3e;
