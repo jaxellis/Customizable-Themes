@@ -953,7 +953,7 @@ span[style=' color: #FF0000;'] {
 	border-left: var(--theme-main-color) 1px solid;
 }
 
-/*Seasonal Anime Archive*/
+/* Seasonal Anime Archive */
 .season .anime-seasonal-byseason td {
 	border: var(--theme-main-color) 1px solid !important;
 }
@@ -3169,7 +3169,7 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	border-color: #121c30 !important;
 }
 
-/* Anime/Manga Search*/
+/* Anime/Manga Search */
 .anime-manga-search .genre-link .genre-list {
 	border-bottom: #3e3e3e 1px solid;
 }
