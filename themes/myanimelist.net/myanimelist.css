@@ -1,5 +1,5 @@
 /*
-Thanks to Shishi & cicerakes for their code!
+Thanks to Shishi, cicerakes, & Nightsanity for their code!
 
 --------------------------------------------
 Custom Variables: Change Theme With These
@@ -19,6 +19,7 @@ Defaults:
 */
 
 :root {
+
 	/* Theme Colors */
 	--theme-background-color: rgb(0, 0, 0);
 	--theme-foreground-color: rgb(15, 15, 15);
@@ -27,13 +28,15 @@ Defaults:
 	--theme-text-color: rgb(197, 197, 197);
 	--theme-green-color: rgb(1, 110, 12);
 
-	/* Left Character*/
+	/* Left Character */
+
 	/* Replace 'url()' with 'none' to not use */
 	--theme-character-left: url(https://i.imgur.com/E3Y2EJH.png);
 	/* Change % to move picture */
 	--theme-move-left: 0%;
 
 	/* Right Character */
+
 	/* Replace 'url()' with 'none' to not use */
 	--theme-character-right: url(https://i.imgur.com/0NQEzca.png);
 	/* Change % to move picture */
@@ -54,17 +57,6 @@ div#menu:before,
 div#myanimelist::before {
 	background-image: var(--theme-character-left) !important;
 	left: var(--theme-move-left) !important;
-	top: 0% !important;
-	height: 100% !important;
-	content: \"\" !important;
-	width: 100% !important;
-	position: fixed !important;
-	bottom: 0;
-	display: block !important;
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	background-size: contain !important;
-	z-index: -1 !important;
 }
 
 /* Right Character */
@@ -72,6 +64,13 @@ div#menu::after,
 div#myanimelist::after {
 	background-image: var(--theme-character-right) !important;
 	right: var(--theme-move-right) !important;
+}
+
+/* Both Characters */
+div#menu::after,
+div#myanimelist::after,
+div#menu:before,
+div#myanimelist::before {
 	top: 0% !important;
 	height: 100% !important;
 	content: \"\" !important;
@@ -197,6 +196,7 @@ div#myanimelist::after {
 		margin-right: -40%;
 	}
 }
+
 /* END Characters */
 
 /* START Background */
@@ -220,37 +220,8 @@ div#myanimelist::after {
 	background-color: var(--theme-background-color) !important;
 	background-image: url(data:image/png;base64,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);
 }
+
 /* END Background */
-
-/* START Footer */
-/* Hide Footer */
-#footer-block {
-	display: none !important;
-}
-
-#myanimelist {
-	padding-bottom: 40px;
-}
-
-#content > div > div.container-right > div.clearfix,
-#contentWrapper > div.mauto.clearfix.pt24 {
-	display: none !important;
-}
-/* Footer Theme (In case footer is used) */
-.page-common #footer-block {
-	background-color: var(--theme-foreground-color);
-}
-.page-common #footer-block .footer-link a,
-.page-common #footer-block .footer-recommended .icon-recommended {
-	color: var(--theme-text-color) !important;
-}
-.page-common .footer-ranking {
-	background-color: var(--theme-foreground-color);
-}
-.page-common .footer-ranking .ranking-unit h3.title {
-	border-color: var(--theme-main-color);
-}
-/* END Footer */
 
 /* START Main Theme */
 body {
@@ -293,14 +264,17 @@ body:not(.ownlist):before {
 	background-color: var(--theme-background-color) !important;
 	color: var(--theme-main-color) !important;
 }
+
 /* Right-side of Header Menu's */
 .page-common #menu_right {
 	background-color: var(--theme-background-color);
 }
+
 /* Search bar Filter Dropdown */
 .page-common #searchBar.searchBar .form-select-outer {
 	border-radius: unset;
 }
+
 /* Fixes border disappearing from Search Bar Filter Dropdown */
 select#topSearchValue:focus-visible {
 	outline: unset;
@@ -510,10 +484,12 @@ hr {
 .icon-about-recommendations {
 	color: var(--theme-main-color);
 }
+
 /* Top-right navigation */
 .page-common #header-menu > .border:before {
 	border-color: var(--theme-main-color);
 }
+
 /* > Profile menu */
 .page-common .header-profile-button {
 	background-color: #2e2e2e !important;
@@ -556,6 +532,7 @@ hr {
 	border-color: var(--theme-foreground-color);
 	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
 }
+
 /* > List nav */
 .page-common .header-list.on .header-list-button {
 	color: var(--theme-foreground-color);
@@ -578,6 +555,7 @@ hr {
 	border-color: var(--theme-foreground-color);
 	box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.4);
 }
+
 /* > Notifications */
 .page-common .header-notification-dropdown .arrow_box {
 	background-color: var(--theme-background-color);
@@ -634,6 +612,7 @@ hr {
 .page-common .header-notification-dropdown-inner h3 .mark-all {
 	color: var(--theme-main-color);
 }
+
 /* > Messages button */
 .page-common .header-message-button.has-unread:after {
 	border-color: var(--theme-background-color);
@@ -641,6 +620,7 @@ hr {
 .page-common .header-message-button:hover {
 	color: #8ba4de !important;
 }
+
 /* Search Bar */
 .page-common .incrementalSearchResultList {
 	background-color: var(--theme-background-color);
@@ -708,6 +688,7 @@ hr {
 .page-common .incrementalSearchResultList .list.list-bottom.focus a {
 	color: var(--theme-main-color) !important;
 }
+
 /* Search Results */
 .anime-search-form-block .anime-search-form-search .inputButton.notActive {
 	color: #4a4a4a;
@@ -749,10 +730,12 @@ hr {
 	color: var(--theme-foreground-color);
 	border-color: var(--theme-foreground-color);
 }
+
 /* Anime/Manga Search (Results) */
 .view-style .btn-view-style {
 	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuOWwzfk4AAANeSURBVHhe7ZwxblNREEX/QsAlZSpwkdgU7IEixGlZAV1Wg1CwXWRNpIIKVkBk/jhPFlzd5zdjCXuefK90qO4b6f2j73yaGa4/3Q1XH768ni3W32aL1e/57cNGHA975iOPl9f3b8zFVsZ8sX5iZXE8xhfiyaQM9mbMb9ebi7cfN9PpdDOZTLqCXa5X7E0ZhdjP1LpLGQa7WK+Yi8FkGOyyPcAu1jMSkgwJSYaEJENCkiEhyZCQZEhIMsJC2BAGO2uwLoOdZbCz+6jF24sG57aQkBJvLxqc20JCSry9aHBuCwkp8faiwbktJKTE24sG57aQkBJvLxqc2+LshGRHQpIhIcmQkGSEhWSDXWoftXh70eDcFhJS4u1Fg3NbSEiJtxcNzm0hISXeXjQ4t4WElHh70eDcFhJS4u1Fg3NbhIWwIQx21mBdBjvLYGd7RkKSISHJkJBknJ2QWry9aHBuCwkp8faiwbktJKTE24sG57aQkBJvLxqc20JCSry9aHBuCwkp8faiwbktwkKywS7VMxKSDAlJhoQkQ0KSISHJkJBkSEgydqs1Xl28oxfODrtUr2xXa9jCExNiy2d6lMIu1iu2CGiwlUBaz3R6bD2TrcraLjAzKfamPP988QPi/2DP3J79boGZhJyW8Zn/mC2Wq8ub+5e7jXL2urCyOCKL1S+TUjbKkUJnsD/4PWAfUvZBZR9W49uyLJ+9/JI9wS7bCyalCPk+/seQX7A32EV7woQYEpIECUmGhCRDQpIhIcmQkGRISDIOFuINO2t4w87ug12Swc4a3l4UnFtDQgBvLwrOrSEhgLcXBefWkBDA24uCc2tICODtRcG5NSQE8Pai4NwaZyskKxKSDAlJhoQk42AhWWGXZLCzhrcXBefWkBDA24uCc2tICODtRcG5NSQE8Pai4NwaEgJ4e1Fwbg0JAby9KDi3xsFCvGFnDW/Y2X2wS/aEhCRDQpIhIck4WyHsrOHtRcG5NSQE8Pai4NwaEgJ4e1Fwbg0JAby9KDi3hoQA3l4UnFtDQgBvLwrOrXGwkKywS/aEhCRDQpIhIcmQkGRISDIkJBkSkoydEK3WOD3/rNYY/3lkF+wNdtEe+Hv5zNXN6mvZlaX1TCdnsfo5e//5hRaYnRj7mRpZPi8wuxv+ABFnqGQnl6L4AAAAAElFTkSuQmCC);
 }
+
 /* Profile */
 .profile .statistics-updates .data .graph {
 	background-color: var(--theme-foreground-color) !important;
@@ -836,6 +819,7 @@ hr {
 .page-rwd.page-history #contentWrapper {
 	color: var(--theme-text-color);
 }
+
 /* > Stats Bars */
 .profile .user-statistics .stats-graph {
 	background-color: #c3c3c3;
@@ -880,6 +864,7 @@ hr {
 .profile .statistics-updates .data .text.dropped {
 	color: #ba4b4d;
 }
+
 /* > Compatability/Affinity Bar */
 .user-profile .user-compatability-graph .bar-outer .bar-inner {
 	height: 20px !important;
@@ -892,6 +877,7 @@ hr {
 	background-color: rgba(255, 170, 85, 0.2) !important;
 	border-left-color: #3e3e3e !important;
 }
+
 /* > Comments */
 .profile .user-comments .comment .image img {
 	border-color: var(--theme-main-color);
@@ -902,6 +888,7 @@ hr {
 .profile .user-comments .comment:nth-of-type(odd) {
 	background-color: var(--theme-background-color) !important;
 }
+
 /* > Shared Anime/Manga */
 .borderClass[style='background-color: #f6f6f6;'] {
 	background-color: var(--theme-foreground-color) !important;
@@ -912,10 +899,12 @@ span[style=' color: #0000FF;'] {
 span[style=' color: #FF0000;'] {
 	color: #d84a4c !important;
 }
+
 /* Blogs */
 .page-rwd.page-blog-detail #content {
 	color: var(--theme-text-color);
 }
+
 /* Edit Anime/Manga History */
 #fancybox-inner {
 	color: var(--theme-text-color) !important;
@@ -923,6 +912,7 @@ span[style=' color: #FF0000;'] {
 .spaceit_pad a {
 	color: var(--theme-main-color);
 }
+
 /* Top Anime/Manga */
 .top-ranking-table .table-header td {
 	border-color: var(--theme-background-color);
@@ -959,6 +949,7 @@ span[style=' color: #FF0000;'] {
 .top-ranking-table tr td {
 	border-left: var(--theme-main-color) 1px solid;
 }
+
 /*Seasonal Anime Archive*/
 .season .anime-seasonal-byseason td {
 	border: var(--theme-main-color) 1px solid !important;
@@ -969,6 +960,7 @@ span[style=' color: #FF0000;'] {
 .season .anime-seasonal-byseason tr {
 	background-color: var(--theme-foreground-color);
 }
+
 /* > Status Buttons */
 .top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status {
 	background-color: var(--theme-background-color);
@@ -1035,6 +1027,7 @@ span[style=' color: #FF0000;'] {
 	background-color: var(--theme-foreground-color);
 	color: var(--theme-text-color) !important;
 }
+
 /* Top Characters */
 .characters-search-form-search .inputButton {
 	background-color: #2e2e2e !important;
@@ -1077,6 +1070,7 @@ span[style=' color: #FF0000;'] {
 .characters-favorites-ranking-table tr.ranking-list .favorites {
 	color: var(--theme-text-color);
 }
+
 /* Top People */
 .people-search-form-search .inputButton {
 	background-color: #2e2e2e !important;
@@ -1111,6 +1105,7 @@ span[style=' color: #FF0000;'] {
 .people-favorites-ranking-table tr.ranking-list .favorites {
 	color: var(--theme-text-color);
 }
+
 /* View Anime/Manga */
 .page-common .bgColor2 {
 	background-color: var(--theme-background-color);
@@ -1237,6 +1232,7 @@ span[style=' color: #FF0000;'] {
 .button[data-v-6ae44976]:hover {
 	color: var(--theme-text-color) !important;
 }
+
 /* > Manga Store */
 a.left-info-block-manga-store-button {
 	color: var(--theme-text-color) !important;
@@ -1244,6 +1240,7 @@ a.left-info-block-manga-store-button {
 a.left-info-block-manga-store-button:hover {
 	color: var(--theme-text-color) !important;
 }
+
 /* Episode Viewing */
 div[style='background-color:#f6f6f6'] {
 	background-color: var(--theme-foreground-color) !important;
@@ -1332,6 +1329,7 @@ div[style='background-color:#f6f6f6'] {
 	background-image: url('https://myanimelist.net/images/icon-btn-circle-button-blue.png?v=151027001'),
 		url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC42/Ixj3wAAALNJREFUWEfV0yEPglAAAGE3mtXo9pLZbibb7XaynWwmU6lUms1mM1EsBgKbG3Puoe46P+AIX79yixBCYkbg0ozAlRmBazMCN2YEbs0I3JkRmJoRuDcj8GBG4NGMwMyMwJMZgbkZgWczAgszAkszAiszAmszAhszAi9mBF7NCLyZEXg3I7A1I/BhRuDTjMDOjMDejMCXGYGDGYFvMwI/ZgRGMwJHMwK/ZrMI/JnNInDyHocQ/0Y8PWPOjQGXAAAAAElFTkSuQmCC);
 }
+
 /* > Episodes List */
 .episode_list .episode-list-header {
 	background-color: #3e3e3e !important;
@@ -1358,6 +1356,7 @@ div[style='background-color:#f6f6f6'] {
 	color: #bebebe;
 	background-color: rgba(62, 62, 62, 0.5);
 }
+
 /* > Stats */
 .anime-detail-header-stats .stats-block,
 .anime-detail-header-stats .user-status-block {
@@ -1427,6 +1426,7 @@ div[style='background-color:#f6f6f6'] {
 	color: #c3c3c3 !important;
 	border-color: #c3c3c3 !important;
 }
+
 /* > Reviews */
 .reviews-horiznav-nav-sort-block .review-sort-order-block,
 .reviews-horiznav-nav-sort-block
@@ -1449,6 +1449,7 @@ div[style='background-color:#f6f6f6'] {
 .spaceit.textReadability.word-break.pt8.mt8[style='clear: both; border-top: 1px solid #ebebeb;'] {
 	border-color: var(--theme-main-color);
 }
+
 /* Add/Edit detailed info */
 #fancybox-outer {
 	background-color: var(--theme-background-color) !important;
@@ -1462,6 +1463,7 @@ div[style='background-color:#f6f6f6'] {
 .ownlist_manga_update #advanced-button .separator {
 	border-color: var(--theme-main-color);
 }
+
 /* horiznav Tabs */
 .page-common #horiznav_nav {
 	border-color: var(--theme-foreground-color);
@@ -1481,6 +1483,7 @@ div[style='background-color:#f6f6f6'] {
 	background-color: var(--theme-foreground-color) !important;
 	color: var(--theme-text-color) !important;
 }
+
 /* Filter/search by genre/studio */
 .anime-filter .search-filter-sort-order-block {
 	background-color: var(--theme-background-color);
@@ -1498,6 +1501,7 @@ div[style='background-color:#f6f6f6'] {
 	.btn-sort-order.circle.selected::after {
 	background-image: url(data:image/png;base64,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);
 }
+
 /* Promo vids */
 .video-menu-category {
 	border-color: var(--theme-main-color);
@@ -1563,6 +1567,7 @@ div[style='background-color:#f6f6f6'] {
 	a.button_edit.plantowatch {
 	background-color: #c3c3c3;
 }
+
 /* Login */
 #dialog {
 	border-color: #121c30;
@@ -1583,6 +1588,7 @@ div[style='background-color:#f6f6f6'] {
 	background-color: #3e3e3e;
 	color: var(--theme-main-color);
 }
+
 /* Seasonal Anime */
 .seasonal-anime-list .anime-header {
 	background-color: var(--theme-foreground-color);
@@ -1695,6 +1701,7 @@ div[style='background-color:#f6f6f6'] {
 	.btn-sort-order.circle.selected::after {
 	background-image: url(data:image/png;base64,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);
 }
+
 /* > horiznav Tabs */
 .navi-seasonal {
 	background-color: var(--theme-background-color);
@@ -1732,6 +1739,7 @@ div[style='background-color:#f6f6f6'] {
 .navi-seasonal .horiznav-nav-seasonal .btn-seasonal .btn-type.on {
 	background-color: var(--theme-foreground-color);
 }
+
 /* Settings */
 .setting-row.show-hidden {
 	background-color: var(--theme-background-color) !important;
@@ -1783,6 +1791,7 @@ td[class='borderClass'][style='padding: 3px 0; border-bottom-width: 1px; border-
 .page-common .icon-social-login.connect {
 	color: var(--theme-text-color) !important;
 }
+
 /* > List Style */
 .ownlist_style .style-setting .setting-switch input[type='radio'] + label {
 	background-color: #3e3e3e;
@@ -1830,6 +1839,7 @@ td[class='borderClass'][style='padding: 3px 0; border-bottom-width: 1px; border-
 	color: var(--theme-text-color);
 	border-color: var(--theme-foreground-color);
 }
+
 /* > Notifications */
 .notification_settings
 	.notification-setting-content
@@ -1997,6 +2007,7 @@ td[class='borderClass'][style='padding: 3px 0; border-bottom-width: 1px; border-
 	+ label::after {
 	background-color: #4e4e4e;
 }
+
 /* Forums */
 .page-forum .forum_category {
 	background-color: var(--theme-foreground-color);
@@ -2133,6 +2144,7 @@ a.icon-team-title {
 .page-forum .forum_category a:visited {
 	color: var(--theme-text-color) !important;
 }
+
 /* Messages */
 .mym_actions {
 	color: #888;
@@ -2169,6 +2181,7 @@ a.icon-team-title {
 	background-color: var(--theme-foreground-color);
 	border-color: var(--theme-main-color);
 }
+
 /* Clubs */
 .club-search-form-search .inputButton {
 	background-color: #2e2e2e !important;
@@ -2201,6 +2214,7 @@ a.icon-team-title {
 	background-color: var(--theme-foreground-color);
 	color: var(--theme-text-color);
 }
+
 /* Create Review */
 .review_scoreoff {
 	background-color: #2e2e2e;
@@ -2216,6 +2230,7 @@ a.icon-team-title {
 	color: var(--theme-foreground-color);
 	border-color: var(--theme-foreground-color);
 }
+
 /* News */
 .news-list .news-unit .text {
 	color: var(--theme-text-color);
@@ -2314,6 +2329,7 @@ body.news .news-content-block .news-related-database tr td {
 .page-common .fn-black {
 	color: var(--theme-text-color) !important;
 }
+
 /* > Tags Filter */
 #all.btn-category {
 	border-color: var(--theme-background-color) !important;
@@ -2379,6 +2395,7 @@ circle[fill='#9B26AF'] {
 	color: var(--theme-text-color);
 	border-color: #8e8e93 !important;
 }
+
 /* > Tags */
 .news-list .news-unit .information .tags {
 	border-color: var(--theme-main-color);
@@ -2450,6 +2467,7 @@ body.news .news-container .tags .tag.tag-color6:hover {
 	background-color: #636366;
 	border-color: #636366;
 }
+
 /* > Tag Cloud */
 body.news .tag-side-block .tag-cloud .tag.tag-color1 {
 	background-color: #ba4b4d;
@@ -2505,6 +2523,7 @@ body.news .tag-side-block .tag-cloud .tag.tag-color6:hover {
 	background-color: #636366;
 	border-color: #636366;
 }
+
 /* < Tags Page */
 body.news .news-breadcrumbs {
 	border-color: var(--theme-main-color);
@@ -2603,6 +2622,7 @@ body.news
 	background-color: #8e8e93;
 	color: var(--theme-text-color);
 }
+
 /* Featured Articles */
 .news-list .comment-list .information .tags .tag,
 .news-list .news-unit .information .tags .tag,
@@ -2728,6 +2748,7 @@ body.news .news-container .tags .tags-inner-attributes {
 .featured-pickup .featured-pickup-unit .information .pv {
 	border-color: var(--theme-main-color);
 }
+
 /* Anime Streaming */
 .watch .watch-anime-list .watch-anime {
 	border-color: #2e2e2e;
@@ -2799,6 +2820,7 @@ body.news .news-container .tags .tags-inner-attributes {
 .watch .watch-anime-list .watch-anime .prodsrc a.button_edit.plantowatch {
 	border-color: #c3c3c3;
 }
+
 /* Notifications Page */
 .page-common #content.container--small-left .left-column {
 	border-color: var(--theme-main-color);
@@ -2833,6 +2855,7 @@ body.notification .notification-header .right-menu .item {
 body.notification .notification-item:hover {
 	background-color: #2e2e2e;
 }
+
 /* Quick Add */
 .quickadd-content .quickadd-form-search .inputtext {
 	border-color: #5a5a5a;
@@ -2885,24 +2908,12 @@ body.notification .notification-item:hover {
 	background-color: #5e5e5e;
 	color: var(--theme-text-color);
 }
+
 /* Import List */
 .page-common .fn-grey6 {
 	color: var(--theme-text-color) !important;
 }
-/* About Page */
-section img[src='https://myanimelist.cdn-dena.com/images/about/overview/head-bg.jpg?v=170130']
-{
-	-webkit-filter: brightness(30%);
-	filter: brightness(30%);
-}
-.about-contents .about-intro .head-logo {
-	-webkit-filter: brightness(125%);
-	filter: brightness(125%);
-	z-index: 2;
-}
-.about-contents .about-intro .youtube {
-	z-index: 2;
-}
+
 /* MAL Supporter */
 .membership .about-membership .plan,
 .membership .about-membership .plan-header {
@@ -2933,6 +2944,7 @@ section img[src='https://myanimelist.cdn-dena.com/images/about/overview/head-bg.
 	text-shadow: none;
 	color: #9e9e9e;
 }
+
 /* > Payment */
 .membership .btn-plan {
 	background-color: var(--theme-background-color);
@@ -2961,18 +2973,7 @@ section img[src='https://myanimelist.cdn-dena.com/images/about/overview/head-bg.
 .membership .membership-payment .text-payment-notice {
 	background-color: var(--theme-foreground-color);
 }
-/* > FAQ */
-.membership .membership-faq {
-	color: var(--theme-text-color);
-}
-.membership .membership-faq .question,
-.membership .membership-faq .answer {
-	border-color: var(--theme-main-color);
-}
-.membership .membership-faq .question.on,
-.membership .membership-faq .question:hover {
-	background-color: var(--theme-foreground-color);
-}
+
 /* Manga Store */
 .manga-store {
 	color: var(--theme-text-color);
@@ -3015,6 +3016,7 @@ a.manga-store-genre-list-toggle:before,
 a.manga-store-genre-list-toggle:after {
 	background-color: var(--theme-text-color);
 }
+
 /* > Search */
 .manga-store .manga-store-search-form-search .inputButton {
 	background-color: #2e2e2e;
@@ -3027,6 +3029,7 @@ a.manga-store-genre-list-toggle:after {
 .manga-store .manga-store-search-results .items {
 	border-top-color: #3e3e3e;
 }
+
 /* > View Manga */
 .manga-store .content-detail,
 .manga-store .main-right,
@@ -3091,6 +3094,7 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	color: var(--theme-text-color) !important;
 	text-shadow: #000 1px 1px 1px !important;
 }
+
 /* > Bookshelf */
 .manga-store .manga-store-tab-menu {
 	border-color: var(--theme-main-color);
@@ -3114,7 +3118,19 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 .manga-store .manga-store-bookshelf .manga-store-bookshelf-rows {
 	border-top-color: #3e3e3e;
 }
+
 /* > FAQ */
+.membership .membership-faq {
+	color: var(--theme-text-color);
+}
+.membership .membership-faq .question,
+.membership .membership-faq .answer {
+	border-color: var(--theme-main-color);
+}
+.membership .membership-faq .question.on,
+.membership .membership-faq .question:hover {
+	background-color: var(--theme-foreground-color);
+}
 .faq-container .faq-lists {
 	color: var(--theme-text-color);
 }
@@ -3149,9 +3165,8 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 .modal-wrapper {
 	border-color: #121c30 !important;
 }
-/* The following section of code was done by another user, with minor changes by me. */
-/* :::::(C)Nightsanity::::: */
-/*manga & anime search*/
+
+/* Anime/Manga Search*/
 .anime-manga-search .genre-link .genre-list {
 	border-bottom: #3e3e3e 1px solid;
 }
@@ -3167,14 +3182,16 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 .anime-manga-search .genre-link .genre-list .genre-name-link:hover {
 	background-color: #2e2e2e;
 }
-/*Notifications*/
+
+/* Notifications */
 .page-common .header-notification-item {
 	border-bottom: 1px solid #333;
 }
 .page-common .header-notification-item > .inner.is-read {
 	color: #aaa !important;
 }
-/*Private Inbox*/
+
+/* Private Inbox */
 .total_messages {
 	border-bottom: #5e5e5e 1px solid;
 	color: #aaa;
@@ -3204,7 +3221,8 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 .message.read .mym_subject .subject-link {
 	color: var(--theme-main-color);
 }
-/*message history*/
+
+/* Message History */
 .pmessage-message-history .subject {
 	padding-bottom: 4px;
 	border-bottom: #3e3e3e 1px solid;
@@ -3226,12 +3244,13 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	background-color: var(--theme-foreground-color);
 	color: var(--theme-text-color);
 }
-/*Reviews Sorted by Block*/
+
+/* Reviews Sorted by Block */
 .reviews-horiznav-nav-sort-block {
 	border-bottom: 1px solid #5e5e5e;
 }
 
-/*featured articles page*/
+/* Featured Articles Page */
 .news.featured .featured-search-side .featured-search-input-text {
 	width: 223px;
 	color: var(--theme-text-color);
@@ -3243,7 +3262,21 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	color: var(--theme-foreground-color);
 	border-color: #3a3a3a;
 }
-/*ABOUT PAGE*/
+
+/* About Page */
+section img[src='https://myanimelist.cdn-dena.com/images/about/overview/head-bg.jpg?v=170130']
+{
+	-webkit-filter: brightness(30%);
+	filter: brightness(30%);
+}
+.about-contents .about-intro .head-logo {
+	-webkit-filter: brightness(125%);
+	filter: brightness(125%);
+	z-index: 2;
+}
+.about-contents .about-intro .youtube {
+	z-index: 2;
+}
 .di-tc.about-content-box.l.ac img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig01_1.png?v=170130']
 {
 	content: url('https://i.imgur.com/Y54f22k.png') !important;
@@ -3259,7 +3292,8 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 {
 	content: url('https://i.imgur.com/a6EcLvs.png') !important;
 }
-/*Advertising page*/
+
+/* Advertising page */
 .page-advertising .ad_form_content label.required {
 	color: var(--theme-main-color);
 }
@@ -3305,5 +3339,40 @@ div.pager-area ul.pager li.pager-item a.pager-item-button {
 	background-color: var(--theme-foreground-color);
 	border: var(--theme-foreground-color) 1px solid;
 }
-/*End of section*/
-/* END Main Theme*/
+
+/* End of Section */
+
+/* START Footer */
+
+/* Hide Footer */
+#footer-block {
+	display: none !important;
+}
+
+#myanimelist {
+	padding-bottom: 40px;
+}
+
+#content > div > div.container-right > div.clearfix,
+#contentWrapper > div.mauto.clearfix.pt24 {
+	display: none !important;
+}
+
+/* Footer Theme (In case footer is used) */
+.page-common #footer-block {
+	background-color: var(--theme-foreground-color);
+}
+.page-common #footer-block .footer-link a,
+.page-common #footer-block .footer-recommended .icon-recommended {
+	color: var(--theme-text-color) !important;
+}
+.page-common .footer-ranking {
+	background-color: var(--theme-foreground-color);
+}
+.page-common .footer-ranking .ranking-unit h3.title {
+	border-color: var(--theme-main-color);
+}
+
+/* END Footer */
+
+/* END Main Theme */
