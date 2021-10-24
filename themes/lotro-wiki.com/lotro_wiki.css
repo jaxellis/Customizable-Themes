@@ -105,10 +105,10 @@ Defaults:
 }
 .ext-status-stable,
 .ext-status-stable td {
-	border-color: #009900;
+	border-color: #090;
 }
 .ext-status-stable .ext-header {
-	background-color: #009900;
+	background-color: #090;
 }
 li::marker {
 	color: var(--theme-main-color);
@@ -560,7 +560,7 @@ td.white {
 
 table.darktable {
 	border: 1px solid silver;
-	background: #888888;
+	background: #888;
 }
 table.darktable th {
 	background-color: black;
@@ -615,10 +615,10 @@ table.altRowsMed tr.even {
 	background-color: var(--theme-foreground-color);
 }
 table.altRowsMed2 th {
-	background-color: #bbbbff;
+	background-color: #bbf;
 }
 table.altRowsMed2 tr.odd {
-	background-color: #eeeeff;
+	background-color: #eef;
 }
 table.altRowsMed2 tr.even {
 	background-color: var(--theme-background-color);
@@ -630,22 +630,22 @@ table.altRowsMed tr.odd {
 	background-color: var(--theme-background-color);
 }
 table.altRowsPad th {
-	background-color: #bbbbff;
+	background-color: #bbf;
 }
 table.altRowsPad tr.odd {
 	background-color: var(--theme-background-color);
 }
 table.altRowsPad tr.even {
-	background-color: #eeeeff;
+	background-color: #eef;
 }
 table.altRowsCenter th {
-	background-color: #bbbbff;
+	background-color: #bbf;
 }
 table.altRowsCenter tr.odd {
 	background-color: var(--theme-background-color);
 }
 table.altRowsCenter tr.even {
-	background-color: #eeeeff;
+	background-color: #eef;
 }
 table.altRowsMP {
 	border: 3px ridge silver;
@@ -670,10 +670,10 @@ a:active {
 	color: cyan;
 }
 table.altRowsMP tr.odd {
-	background-color: #444444;
+	background-color: #444;
 }
 table.altRowsMP tr.even {
-	background-color: #222222;
+	background-color: #222;
 }
 table.stocktable {
 	border: 1px solid var(--theme-main-color);
@@ -685,7 +685,7 @@ table.stocktable th {
 	background-color: var(--theme-background-color);
 }
 table.stocktable tr:not(:first-child) th {
-	background-color: #eeeeff;
+	background-color: #eef;
 }
 table.mptable {
 	border: 3px ridge silver;
@@ -696,7 +696,7 @@ table.mptable caption {
 	color: teal;
 }
 table.mptable td {
-	background-color: #444444;
+	background-color: #444;
 	color: moccasin;
 }
 table.mptable th {
@@ -760,7 +760,7 @@ table.WBMTable {
 	color: moccasin;
 }
 table.WBMTable td {
-	background-color: #444444;
+	background-color: #444;
 	color: moccasin;
 }
 table.WBMTable th {
@@ -800,23 +800,23 @@ div.help-contents {
 	background: #fff8dc;
 }
 .help-contents-box2 {
-	background: #ffcccc;
+	background: #ffc;
 }
 .help-contents-box3 {
-	background: #ccccff;
+	background: #ccf;
 }
 .help-contents-box4 {
 	background: var(--theme-foreground-color);
 }
 .help-contents-box5 {
-	background: #ccff99;
+	background: #cf9;
 }
 div.template-documentation {
 	border: 1px solid #aaa;
 	background-color: #ecfcf4;
 }
 .title-normal th {
-	background: #bbbbff;
+	background: #bbf;
 }
 .title-freeps th {
 	background: #da8025;
@@ -917,7 +917,7 @@ legend {
 }
 @media screen {
 	:focus {
-		outline-color: #3366cc;
+		outline-color: #36c;
 	}
 	body {
 		background-color: var(--theme-background-color);
@@ -956,8 +956,8 @@ legend {
 	}
 	#searchInput:focus,
 	#simpleSearch:hover #searchInput:focus {
-		border-color: #3366cc;
-		box-shadow: inset 0 0 0 1px #3366cc;
+		border-color: #36c;
+		box-shadow: inset 0 0 0 1px #36c;
 	}
 	#searchInput::input-placeholder {
 		color: #72777d;
@@ -1041,14 +1041,14 @@ legend {
 	}
 	.firstHeading,
 	h2 {
-		border-bottom: 2px solid #000000;
+		border-bottom: 2px solid #000;
 	}
 	blockquote {
-		border-left: 2px solid #000000;
+		border-left: 2px solid #000;
 	}
 	.mw-jump-link,
 	.printfooter {
-		border-top: 3px solid #000000;
+		border-top: 3px solid #000;
 	}
 	.mw-footer {
 		border-top: 1px solid var(--theme-background-color);
@@ -1094,8 +1094,9 @@ legend {
 	a.stub {
 		color: inherit !important;
 	}
-	.mw-parser-output a.external.text[href^='//']:after,.mw-parser-output a.external.autonumber[href^='//']:after
-	pre,	.mw-code {
+	.mw-parser-output a.external.text[href^='//']:after,
+	.mw-parser-output a.external.autonumber[href^='//']:after pre,
+	.mw-code {
 		background: #fff;
 		color: var(--theme-text-color);
 		border: 1pt dashed #000;
@@ -1322,5 +1323,5 @@ legend {
 #n-browse-cvs a,
 #n-phpdoc a,
 #n-Mailing-list a {
-	color: #3366bb;
+	color: #36b;
 }
