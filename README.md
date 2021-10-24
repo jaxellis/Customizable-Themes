@@ -1,6 +1,6 @@
 [![img](https://img.shields.io/github/issues/jaxellis/Customizable-Themes.svg?style=flat-square&logo=github&logoColor=white)](https://github.com/jaxellis/Customizable-Themes/issues)
 [![CodeFactor](https://www.codefactor.io/repository/github/jaxellis/Customizable-Themes/badge)](https://www.codefactor.io/repository/github/jaxellis/Customizable-Themes)
-
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/ee8135a888ba4d6c80c52de53e22e5b6)](https://www.codacy.com/gh/jaxellis/Customizable-Themes/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jaxellis/Customizable-Themes&amp;utm_campaign=Badge_Grade)
 # Customizable Themes
 
 ## Description
