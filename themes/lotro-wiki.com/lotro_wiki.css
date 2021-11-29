@@ -337,11 +337,13 @@ table.ttipDemo {
 	border: 3px ridge silver;
 	color: var(--theme-text-color);
 }
-
+/* Accuracy Mark Box (When article is marked for accuracy check)  */
 table.ambox {
 	background: var(--theme-background-color);
 	border: 1px solid var(--theme-text-color);
+	/* Uncomment to use to change color
 	border-left: 10px solid #1e90ff;
+	*/
 }
 
 .tooltip-error {
@@ -365,15 +367,17 @@ table.ambox {
 }
 
 @media screen {
+	/* Main Page Body */
 	body {
 		background-color: var(--theme-background-color);
 	}
+	/* Main Foreground Element */
 	.mw-body,
 	.parsoid-body {
 		background-color: var(--theme-foreground-color);
 		color: var(--theme-text-color);
 	}
-
+	/* Header */
 	#mw-page-base {
 		background-color: #fbfbfb;
 		background-image: linear-gradient(
@@ -390,6 +394,7 @@ table.ambox {
 	#pt-anonuserpage {
 		color: var(--theme-text-color);
 	}
+	/* Search Box (Top-Right) */
 	#searchInput {
 		background-color: var(--theme-foreground-color);
 		color: var(--theme-text-color);
