@@ -49,6 +49,11 @@ Defaults:
 	--theme-background-image: url(https://i.imgur.com/uLKnRkk.jpg);
 }
 
+/* Remove Ads */
+.ad-sticky-wrapper, .pda_top {
+	display: none;
+}
+
 /* START Character Images */
 div#menu::before,
 div#menu::after {
