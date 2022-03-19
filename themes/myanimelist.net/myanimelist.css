@@ -50,8 +50,9 @@ Defaults:
 }
 
 /* Remove Ads */
-.ad-sticky-wrapper, .pda_top {
-	display: none;
+div#headerSmall + div, .mal-side-koukoku {
+	height: 0px;
+	width: 0px;
 }
 
 /* START Character Images */
