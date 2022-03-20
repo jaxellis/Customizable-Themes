@@ -50,9 +50,9 @@ Defaults:
 }
 
 /* Remove Ads */
-div#headerSmall + div, .side-koukoku {
-	height: 0px;
-	width: 0px;
+div#headerSmall + div, .koukoku-sticky-wrapper {
+	display: none !important;
+	position: unset !important;
 }
 
 /* START Character Images */
