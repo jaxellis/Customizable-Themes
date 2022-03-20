@@ -402,8 +402,8 @@ body.index .widget.reviews .item {
 	border-color: var(--theme-main-color);
 }
 body.index .widget .widget-header {
-	color: var(--theme-text-color);
-	border-color: var(--theme-main-color);
+	color: var(--theme-text-color) !important;
+	border-color: var(--theme-main-color) !important;
 }
 body.index .left-column {
 	border-color: var(--theme-main-color);
