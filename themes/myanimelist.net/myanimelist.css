@@ -50,7 +50,7 @@ Defaults:
 }
 
 /* Remove Ads */
-div#headerSmall + div, .mal-side-koukoku {
+div#headerSmall + div, .side-koukoku {
 	height: 0px;
 	width: 0px;
 }
