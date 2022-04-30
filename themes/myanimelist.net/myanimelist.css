@@ -931,6 +931,7 @@ span[style=' color: #FF0000;'] {
 }
 .top-ranking-table tr.ranking-list td {
 	border-color: var(--theme-main-color);
+	background-color: var(--theme-foreground-color);
 }
 .top-ranking-table tr:last-of-type {
 	border-bottom-color: #3e3e3e;
