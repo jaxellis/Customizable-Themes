@@ -17,6 +17,11 @@
 	--md-accent-lighten2: theme-main-color !important;
 }
 
+/* Search Input Focused Border */
+.md-inputwrap:focus-within {
+	border-color: theme-main-color !important;
+}
+
 /* Selector Descriptions
 Active tab for changing how you view lists
 Manga tags (Genres)

@@ -35,6 +35,10 @@
 		--md-accent-lighten2: theme-main-color !important;
 	}
 
+	.md-inputwrap:focus-within {
+		border-color: theme-main-color !important;
+	}
+
 	.active svg[data-v-326a31c8],
 	.bg-accent-lighten2,
 	.text-white,
