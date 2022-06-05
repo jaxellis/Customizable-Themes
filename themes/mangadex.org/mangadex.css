@@ -5,7 +5,9 @@
 }
 
 /* Make it work on all themes */
-.slate, .dark_, .light {
+.slate,
+.dark_,
+.light {
 	color: theme-text-color !important;
 	--md-background: theme-background-color !important;
 	--md-accent: theme-foreground-color !important;
@@ -21,7 +23,8 @@ Manga tags (Genres)
 Text normally white
 sidebar active item
 Yes this is correct, Mangadex... why
-Active Tab on Manga page 
+Manga Page: Active Tab (Chapters, Art, Related)
+Manga page: Left side Tags
 */
 
 .active svg[data-v-326a31c8],
@@ -29,7 +32,7 @@ Active Tab on Manga page
 .text-white,
 .menu__item--active-highlight,
 .dark .dark\\:text-white,
-.select__tab-active {
+.select__tab-active,
+a.tag[data-v-6916a5e2]:hover {
 	color: theme-background-color !important;
 }
-

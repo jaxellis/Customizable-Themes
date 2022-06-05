@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Mangadex Customizable Theme
 @namespace      https://github.com/jaxellis/Customizable-Themes
-@version        1.0.0
+@version        1.0.1
 @description    Customizable theme for Mangadex
 @author         Jaxellis
 @homepageURL    https://github.com/jaxellis/Customizable-Themes/tree/main/themes/mangadex.org
@@ -40,7 +40,8 @@
 	.text-white,
 	.menu__item--active-highlight,
 	.dark .dark\\:text-white, // This comment is used to remove a warning because Mangadex is stupid
-	.select__tab-active {
+	.select__tab-active,
+	a.tag[data-v-6916a5e2]:hover {
 		color: theme-background-color !important;
 	}
 }
