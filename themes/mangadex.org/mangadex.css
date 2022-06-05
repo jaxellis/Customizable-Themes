@@ -18,7 +18,7 @@
 }
 
 /* Search Input Focused Border */
-.md-inputwrap:focus-within {
+.md-inputwrap:focus-within .md-border[data-v-3824af96] {
 	border-color: theme-main-color !important;
 }
 
