@@ -16,7 +16,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 		<tr>
 			<th>Site</th>
 			<th>Version</th>
-		</tr>
+  </tr>
 	</thead>
 	<tbody>
 		<tr>
@@ -41,6 +41,14 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 			</td>
 			<td>
 				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/myanimelist.net/"> 1.0.0</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<a href="https://www.mangadex.org/"><img src="https://www.google.com/s2/favicons?domain=mangadex.org"/> Mangadex</a>
+			</td>
+			<td>
+				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/mangadex.org/"> 1.0.0</a>
 			</td>
 		</tr>
 		<tr></tr>
