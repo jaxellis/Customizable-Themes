@@ -29,6 +29,7 @@ Text normally white
 sidebar active item
 Yes this is correct, Mangadex... why
 Manga Page: Active Tab (Chapters, Art, Related)
+Manga Page: Number Selector Text Color
 Manga page: Left side Tags
 */
 
@@ -38,6 +39,7 @@ Manga page: Left side Tags
 .menu__item--active-highlight,
 .dark .dark\\:text-white,
 .select__tab-active,
+.page.loaded > span
 a.tag[data-v-6916a5e2]:hover {
 	color: theme-background-color !important;
 }

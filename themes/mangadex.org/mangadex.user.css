@@ -39,12 +39,14 @@
 		border-color: theme-main-color !important;
 	}
 
+	/* Yes the \\ is valid */
 	.active svg[data-v-326a31c8],
 	.bg-accent-lighten2,
 	.text-white,
 	.menu__item--active-highlight,
-	.dark .dark\\:text-white, // This comment is used to remove a warning because Mangadex is stupid
+	.dark .dark\\:text-white,
 	.select__tab-active,
+	.page.loaded > span,
 	a.tag[data-v-6916a5e2]:hover {
 		color: theme-background-color !important;
 	}
