@@ -566,7 +566,10 @@ v1.0.0 |
 		background-color: #282828;
 		border-bottom: none;
 	}
-	.page-common .header-notification-item-content .actions .action-button.accept {
+	.page-common
+		.header-notification-item-content
+		.actions
+		.action-button.accept {
 		background-color: theme-foreground-color;
 		border-color: theme-foreground-color;
 	}
@@ -717,7 +720,7 @@ v1.0.0 |
 		border-color: theme-main-color;
 	}
 	.js-truncate-outer .btn-truncate {
-		background-image: url('https://myanimelist.net/images/icon-pulldown2.png?v=151027001'),
+		background-image: url('https://myanimelist.net/images/icon-pulldown2.png?v=151027001');
 	}
 	.page-common .content-container .container-left {
 		border-color: theme-main-color;
@@ -923,20 +926,30 @@ v1.0.0 |
 		background-color: theme-background-color;
 	}
 	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading,
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.watching {
 		border-color: theme-green-color;
 		color: theme-green-color !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.reading:hover,
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.watching:hover {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.reading:hover,
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.watching:hover {
 		background-color: theme-green-color;
 		color: theme-text-color !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.completed {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.completed {
 		border-color: theme-foreground-color;
 		color: theme-main-color !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.completed:hover {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.completed:hover {
 		background-color: theme-foreground-color;
 		color: theme-text-color !important;
 	}
@@ -944,7 +957,9 @@ v1.0.0 |
 		border-color: #f6d874;
 		color: #f6d874 !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.on-hold:hover {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.on-hold:hover {
 		background-color: #f6d874;
 		color: theme-text-color !important;
 	}
@@ -952,19 +967,27 @@ v1.0.0 |
 		border-color: #ba4b4d;
 		color: #ba4b4d !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.dropped:hover {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.dropped:hover {
 		background-color: #ba4b4d;
 		color: theme-text-color !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantowatch {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.plantowatch {
 		border-color: #c3c3c3;
 		color: #c3c3c3 !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.plantowatch:hover {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.plantowatch:hover {
 		background-color: #c3c3c3;
 		color: theme-text-color !important;
 	}
-	.top-ranking-table .status .btn-addEdit-large.btn-anime-watch-status.notinmylist {
+	.top-ranking-table
+		.status
+		.btn-addEdit-large.btn-anime-watch-status.notinmylist {
 		background-color: theme-foreground-color;
 		color: theme-text-color !important;
 	}
@@ -1242,20 +1265,32 @@ v1.0.0 |
 	.contents-video-embed .video-anime-slide-block.hori {
 		border-color: theme-main-color;
 	}
-	.contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime {
+	.contents-video-embed
+		.video-anime-slide-block.hori
+		.video-anime-slide
+		.btn-anime {
 		background-color: theme-background-color;
 	}
-	.contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime.play .link {
+	.contents-video-embed
+		.video-anime-slide-block.hori
+		.video-anime-slide
+		.btn-anime.play
+		.link {
 		background-color: #2e2e2e;
 	}
-	.contents-video-embed .video-anime-slide-block.hori .video-anime-slide .btn-anime .link .text {
+	.contents-video-embed
+		.video-anime-slide-block.hori
+		.video-anime-slide
+		.btn-anime
+		.link
+		.text {
 		color: #bebebe;
 	}
 	.page-forum .forum_postusername a {
 		color: theme-main-color;
 	}
 	.video-block.episode-video .outside-region .outside-region-block {
-		background-image: url('https://myanimelist.net/images/icon-btn-circle-button-blue.png?v=151027001'),
+		background-image: url('https://myanimelist.net/images/icon-btn-circle-button-blue.png?v=151027001');
 	}
 
 	/* > Episodes List */
@@ -1357,7 +1392,10 @@ v1.0.0 |
 
 	/* > Reviews */
 	.reviews-horiznav-nav-sort-block .review-sort-order-block,
-	.reviews-horiznav-nav-sort-block .review-sort-order-block .sort-order-list .btn-sort-order {
+	.reviews-horiznav-nav-sort-block
+		.review-sort-order-block
+		.sort-order-list
+		.btn-sort-order {
 		background-color: theme-background-color;
 		border-color: theme-main-color;
 		color: theme-text-color;
@@ -1408,7 +1446,10 @@ v1.0.0 |
 		background-color: theme-background-color;
 		border-color: theme-main-color;
 	}
-	.anime-filter .search-filter-sort-order-block .sort-order-list .btn-sort-order {
+	.anime-filter
+		.search-filter-sort-order-block
+		.sort-order-list
+		.btn-sort-order {
 		color: theme-text-color;
 	}
 	.anime-filter .search-filter-sort-order-block .btn-close {
@@ -1439,24 +1480,54 @@ v1.0.0 |
 		color: theme-main-color;
 		opacity: 1;
 	}
-	.watch-video .video-list-outer-vertical .video-info-title a.button_add.watching,
-	.watch-video .video-list-outer-vertical .video-info-title a.button_edit.watching {
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_add.watching,
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_edit.watching {
 		background-color: theme-green-color;
 	}
-	.watch-video .video-list-outer-vertical .video-info-title a.button_add.completed,
-	.watch-video .video-list-outer-vertical .video-info-title a.button_edit.completed {
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_add.completed,
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_edit.completed {
 		background-color: theme-foreground-color;
 	}
-	.watch-video .video-list-outer-vertical .video-info-title a.button_add.on-hold,
-	.watch-video .video-list-outer-vertical .video-info-title a.button_edit.on-hold {
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_add.on-hold,
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_edit.on-hold {
 		background-color: #f1c83e;
 	}
-	.watch-video .video-list-outer-vertical .video-info-title a.button_add.dropped,
-	.watch-video .video-list-outer-vertical .video-info-title a.button_edit.dropped {
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_add.dropped,
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_edit.dropped {
 		background-color: #ba4b4d;
 	}
-	.watch-video .video-list-outer-vertical .video-info-title a.button_add.plantowatch,
-	.watch-video .video-list-outer-vertical .video-info-title a.button_edit.plantowatch {
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_add.plantowatch,
+	.watch-video
+		.video-list-outer-vertical
+		.video-info-title
+		a.button_edit.plantowatch {
 		background-color: #c3c3c3;
 	}
 
@@ -1596,7 +1667,11 @@ v1.0.0 |
 		background-color: theme-foreground-color;
 	}
 	/* Seasonal Anime Currently Watching */
-	.seasonal-anime-list .seasonal-anime .information .information-item.buttons .bubble {
+	.seasonal-anime-list
+		.seasonal-anime
+		.information
+		.information-item.buttons
+		.bubble {
 		background-color: theme-foreground-color;
 		color: theme-main-color;
 	}
@@ -1696,15 +1771,27 @@ v1.0.0 |
 		background-color: #3e3e3e;
 		color: theme-main-color;
 	}
-	.ownlist_style .style-setting .setting-switch input[type='radio']:checked + label {
+	.ownlist_style
+		.style-setting
+		.setting-switch
+		input[type='radio']:checked
+		+ label {
 		background-color: theme-foreground-color !important;
 		color: theme-text-color !important;
 	}
-	.ownlist_style .style-setting .setting-switch input[type='radio'] + label:last-of-type {
+	.ownlist_style
+		.style-setting
+		.setting-switch
+		input[type='radio']
+		+ label:last-of-type {
 		background-color: #3e3e3e;
 		color: theme-main-color;
 	}
-	.ownlist_style .style-setting .setting-switch input[type='radio'] + label:hover {
+	.ownlist_style
+		.style-setting
+		.setting-switch
+		input[type='radio']
+		+ label:hover {
 		background-color: #4a4a4a;
 	}
 	.ownlist_style .new-theme-list .new-theme-unit {
@@ -1728,64 +1815,170 @@ v1.0.0 |
 	}
 
 	/* > Notifications */
-	.notification_settings .notification-setting-content .settings-notification .setting td.label .title {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.label
+		.title {
 		color: theme-text-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting.header td {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting.header
+		td {
 		background-color: #3e3e3e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting.header td.button {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting.header
+		td.button {
 		border-color: theme-main-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting:first-of-type td {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting:first-of-type
+		td {
 		border-color: theme-main-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td {
 		border-color: theme-main-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button {
 		border-left-color: #3e3e3e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button:last-of-type {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button:last-of-type {
 		border-right-color: #5e5e5e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.label .text {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.label
+		.text {
 		color: #8e8e8e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type='checkbox']:checked + label {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button
+		input[type='checkbox']:checked
+		+ label {
 		background-color: #121c30;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type='checkbox'] + label {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button
+		input[type='checkbox']
+		+ label {
 		border-color: theme-foreground-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type='checkbox'] + label::before {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button
+		input[type='checkbox']
+		+ label::before {
 		color: theme-foreground-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button input[type='checkbox'] + label::after {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button
+		input[type='checkbox']
+		+ label::after {
 		background-color: theme-foreground-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.all input[type='checkbox']:checked + label {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.all
+		input[type='checkbox']:checked
+		+ label {
 		background-color: #1a331a;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.all input[type='checkbox'] + label {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.all
+		input[type='checkbox']
+		+ label {
 		border-color: theme-green-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.all input[type='checkbox'] + label::before {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.all
+		input[type='checkbox']
+		+ label::before {
 		color: theme-green-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.all input[type='checkbox'] + label::after {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.all
+		input[type='checkbox']
+		+ label::after {
 		background-color: theme-green-color;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.off input[type='checkbox']:checked + label {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.off
+		input[type='checkbox']:checked
+		+ label {
 		background-color: #2e2e2e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.off input[type='checkbox'] + label {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.off
+		input[type='checkbox']
+		+ label {
 		border-color: #4e4e4e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.off input[type='checkbox'] + label::before {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.off
+		input[type='checkbox']
+		+ label::before {
 		color: #4e4e4e;
 	}
-	.notification_settings .notification-setting-content .settings-notification .setting td.button.off input[type='checkbox'] + label::after {
+	.notification_settings
+		.notification-setting-content
+		.settings-notification
+		.setting
+		td.button.off
+		input[type='checkbox']
+		+ label::after {
 		background-color: #4e4e4e;
 	}
 
@@ -2044,7 +2237,12 @@ v1.0.0 |
 	body.news .featured-side-block .news-list .news .information .comment,
 	body.news .featured-side-block .news-list .featured .information .comment,
 	body.news .featured-side-block .featured-list .news .information .comment,
-	body.news .featured-side-block .featured-list .featured .information .comment {
+	body.news
+		.featured-side-block
+		.featured-list
+		.featured
+		.information
+		.comment {
 		color: #37539b;
 	}
 	body.news .news-side-block .header,
@@ -2309,55 +2507,94 @@ v1.0.0 |
 	body.news .news-content-block.news-tags .news-tags-table.news td {
 		border-color: theme-main-color;
 	}
-	body.news .news-content-block.news-tags .news-tags-table.news tr:nth-of-type(odd) {
+	body.news
+		.news-content-block.news-tags
+		.news-tags-table.news
+		tr:nth-of-type(odd) {
 		background-color: theme-foreground-color;
 	}
 	body.news .news-content-block.news-tags h2.news-tags-header {
 		border-color: #5e5e5e !important;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color1 {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color1 {
 		border-color: #ba4b4d;
 		color: #9e9e9e;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color1:hover {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color1:hover {
 		background-color: #ba4b4d;
 		color: theme-text-color;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color2 {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color2 {
 		border-color: #f6d874;
 		color: #9e9e9e;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color2:hover {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color2:hover {
 		background-color: #f6d874;
 		color: theme-text-color;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color3 {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color3 {
 		border-color: theme-green-color;
 		color: #9e9e9e;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color3:hover {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color3:hover {
 		background-color: theme-green-color;
 		color: theme-text-color;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color4 {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color4 {
 		color: #9e9e9e;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color4:hover {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color4:hover {
 		background-color: #2095f2;
 		color: theme-text-color;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color5 {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color5 {
 		border-color: #b343c7;
 		color: #9e9e9e;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color5:hover {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color5:hover {
 		background-color: #b343c7;
 		color: theme-text-color;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color6 {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color6 {
 		color: #9e9e9e;
 	}
-	body.news .news-content-block.news-tags .menu-category-tags .btn-category.tag-color6:hover {
+	body.news
+		.news-content-block.news-tags
+		.menu-category-tags
+		.btn-category.tag-color6:hover {
 		background-color: #8e8e93;
 		color: theme-text-color;
 	}
@@ -2383,16 +2620,28 @@ v1.0.0 |
 	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler,
 	.news-list .news-unit .information .tags .tag.tag-color-feature-spoiler,
 	body.news .featured-side-block .featured-list .text-color-spoiler,
-	.featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-spoiler,
+	.featured-pickup
+		.featured-pickup-unit
+		.information
+		.tags
+		.tag.tag-color-feature-spoiler,
 	body.news .news-container .tags .tag.tag-color-feature-spoiler {
 		background-color: #ba4b4d !important;
 		color: theme-text-color !important;
 		border-color: #ba4b4d !important;
 	}
-	.news-list .comment-list .information .tags .tag.tag-color-feature-spoiler:hover,
+	.news-list
+		.comment-list
+		.information
+		.tags
+		.tag.tag-color-feature-spoiler:hover,
 	.news-list .news-unit .information .tags .tag.tag-color-feature-spoiler:hover,
 	body.news .featured-side-block .featured-list .text-color-spoiler:hover,
-	.featured-pickup .featured-pickup-unit .information .tags .tag.tag-color-feature-spoiler:hover,
+	.featured-pickup
+		.featured-pickup-unit
+		.information
+		.tags
+		.tag.tag-color-feature-spoiler:hover,
 	body.news .news-container .tags .tag.tag-color-feature-spoiler:hover {
 		background-color: #823435 !important;
 		border-color: #823435 !important;
@@ -2412,7 +2661,12 @@ v1.0.0 |
 	.featured-pickup .featured-pickup-unit .information .tags {
 		border-color: theme-main-color;
 	}
-	.featured-pickup .featured-pickup-unit .information .tags .tags-pickup-inner .tags-inner-attributes {
+	.featured-pickup
+		.featured-pickup-unit
+		.information
+		.tags
+		.tags-pickup-inner
+		.tags-inner-attributes {
 		border-color: theme-main-color;
 	}
 	.featured-content-block-outer {
@@ -2447,13 +2701,25 @@ v1.0.0 |
 	body.news .news-container .tags .tags-inner-attributes {
 		border-color: theme-main-color;
 	}
-	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial,
+	.news-list
+		.comment-list
+		.information
+		.tags
+		.tag.tag-color-feature-advertorial,
 	.news-list .news-unit .information .tags .tag.tag-color-feature-advertorial {
 		color: theme-background-color;
 		border-color: #7189c6;
 	}
-	.news-list .comment-list .information .tags .tag.tag-color-feature-advertorial:hover,
-	.news-list .news-unit .information .tags .tag.tag-color-feature-advertorial:hover {
+	.news-list
+		.comment-list
+		.information
+		.tags
+		.tag.tag-color-feature-advertorial:hover,
+	.news-list
+		.news-unit
+		.information
+		.tags
+		.tag.tag-color-feature-advertorial:hover {
 		background-color: #4f5f8a;
 		border-color: #4f5f8a;
 	}
@@ -2592,8 +2858,14 @@ v1.0.0 |
 	.quickadd-content .quickAdd-manga-result-unit .quickAdd-result-column {
 		border-color: theme-main-color;
 	}
-	.quickadd-content .quickAdd-anime-result-unit .quickAdd-result-column .required,
-	.quickadd-content .quickAdd-manga-result-unit .quickAdd-result-column .required {
+	.quickadd-content
+		.quickAdd-anime-result-unit
+		.quickAdd-result-column
+		.required,
+	.quickadd-content
+		.quickAdd-manga-result-unit
+		.quickAdd-result-column
+		.required {
 		color: theme-main-color;
 	}
 	.quickadd-content .quickAdd-anime-result-unit .btn-status-add,
@@ -2971,7 +3243,8 @@ v1.0.0 |
 	}
 
 	/* About Page */
-	section img[src='https://myanimelist.cdn-dena.com/images/about/overview/head-bg.jpg?v=170130'] {
+	section img[src='https://myanimelist.cdn-dena.com/images/about/overview/head-bg.jpg?v=170130']
+	{
 		-webkit-filter: brightness(30%);
 		filter: brightness(30%);
 	}
@@ -2983,16 +3256,19 @@ v1.0.0 |
 	.about-contents .about-intro .youtube {
 		z-index: 2;
 	}
-	.di-tc.about-content-box.l.ac img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig01_1.png?v=170130'] {
+	.di-tc.about-content-box.l.ac img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig01_1.png?v=170130']
+	{
 		content: url('https://i.imgur.com/Y54f22k.png') !important;
 	}
-	.di-tc.about-content-box.r.ac img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig01_2.png?v=170130'] {
+	.di-tc.about-content-box.r.ac img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig01_2.png?v=170130']
+	{
 		content: url('https://i.imgur.com/4s4zJV9.png') !important;
 	}
 	.about-content.content-bg-grey {
 		background-color: #333;
 	}
-	.about-content-box.single img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig03_1.png?v=170130'] {
+	.about-content-box.single img[src='https://myanimelist.cdn-dena.com/images/about/overview/fig03_1.png?v=170130']
+	{
 		content: url('https://i.imgur.com/a6EcLvs.png') !important;
 	}
 

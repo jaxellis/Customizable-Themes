@@ -741,7 +741,7 @@ hr {
 	border-color: var(--theme-main-color);
 }
 .js-truncate-outer .btn-truncate {
-	background-image: url('https://myanimelist.net/images/icon-pulldown2.png?v=151027001')
+	background-image: url('https://myanimelist.net/images/icon-pulldown2.png?v=151027001');
 }
 .page-common .content-container .container-left {
 	border-color: var(--theme-main-color);
@@ -1307,7 +1307,7 @@ div[style='background-color:#f6f6f6'] {
 	color: var(--theme-main-color);
 }
 .video-block.episode-video .outside-region .outside-region-block {
-	background-image: url('https://myanimelist.net/images/icon-btn-circle-button-blue.png?v=151027001'),
+	background-image: url('https://myanimelist.net/images/icon-btn-circle-button-blue.png?v=151027001');
 }
 
 /* > Episodes List */
