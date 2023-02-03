@@ -19,7 +19,7 @@ Defaults:
 	--theme-text-color: rgb(197, 197, 197);
 }
 
-/* Cloudflare Captcha */
+/* Cloudflare pages */
 /* Main Background*/
 #cf-wrapper,
 #cf-wrapper #cf-error-details {
@@ -67,4 +67,9 @@ Defaults:
 /* Link Hover Color */
 #cf-wrapper a:hover {
 	color: var(--theme-link-hover);
+}
+/* CF Error Pages */
+div#cf-error-details > .my-8.bg-gradient-gray {
+	background-image: unset;
+	background-color: var(--theme-foreground-color);
 }
