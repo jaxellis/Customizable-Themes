@@ -217,6 +217,9 @@ v1.0.0 |
 	body:not(.ownlist)::before {
 		background: theme-background-color !important;
 	}
+	.text-ribbon > div {
+		background: theme-foreground-color !important;
+	}
 	.page-common #contentHome {
 		background-color: theme-background-color !important;
 		border-color: theme-main-color;

@@ -241,6 +241,9 @@ body:not(.ownlist),
 body:not(.ownlist)::before {
 	background: var(--theme-background-color) !important;
 }
+.text-ribbon > div {
+	background: theme-foreground-color !important;
+}
 .page-common #contentHome {
 	background-color: var(--theme-background-color) !important;
 	border-color: var(--theme-main-color);
