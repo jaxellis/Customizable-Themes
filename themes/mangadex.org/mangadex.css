@@ -5,9 +5,7 @@
 }
 
 /* Make it work on all themes */
-.slate,
-.dark_,
-.light {
+.system {
 	color: theme-text-color !important;
 	--md-background: theme-background-color !important;
 	--md-accent: theme-foreground-color !important;
@@ -23,23 +21,45 @@
 }
 
 /* Selector Descriptions
-Active tab for changing how you view lists
+Buttons: Primary
+Buttons: Active
 Manga tags (Genres)
 Text normally white
 sidebar active item
 Yes this is correct, Mangadex... why
 Manga Page: Active Tab (Chapters, Art, Related)
 Manga Page: Number Selector Text Color
-Manga page: Left side Tags
+Manga Page: Left side Tags
+Manga Page: Buttons
+Manga Page: Chapter On Click
+Manga Page: Show More
+Manga Page: Group tag on hover
+Manga Page: Comments Text on hover
+Manga Page: Comments Icon on hover
+Main Page: Announcement
 */
-
-.active svg[data-v-326a31c8],
+.md-btn.primary,
+.active svg,
 .bg-accent-lighten2,
 .text-white,
 .menu__item--active-highlight,
 .dark .dark\\:text-white,
-.select__tab-active,
-.page.loaded > span
-a.tag[data-v-6916a5e2]:hover {
+.select__tab.active,
+.page.loaded > span,
+a.tag[data-v-6916a5e2]:hover,
+.manga .md-btn.accent[data-v-1de6ef87],
+.chapter[data-v-56f6c307]:active,
+.readmore-link:not(.expand),
+.group-tag:hover,
+.comment-container:hover,
+.comment-container:hover .text-icon-contrast,
+.announcement.primary {
 	color: theme-background-color !important;
+}
+
+/* Selector Descriptions
+Manga Page: Publisher
+*/
+.text-primary {
+	color: unset !important;
 }
