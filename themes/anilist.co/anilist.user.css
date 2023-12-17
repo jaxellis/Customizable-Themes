@@ -1,0 +1,158 @@
+/* ==UserStyle==
+@name           Anilist Customizable theme
+@namespace      https://github.com/jaxellis/Customizable-Themes
+@version        1.0.0
+@description    Customizable theme for Anilist
+@author         Jaxellis
+@homepageURL    https://github.com/jaxellis/Customizable-Themes/tree/main/themes/anilist.co
+@updateURL      https://github.com/jaxellis/Customizable-Themes/raw/main/themes/anilist.co/anilist.user.css
+@preprocessor   stylus
+@var text  theme-background-color	"Background color [RBG]"       	0, 0, 0
+@var text  theme-foreground-color	"Foreground color [RBG]"       	12, 12, 12
+@var text  theme-text-color       	"Text color [RBG]"            	197, 197, 197
+@var text  theme-light-text-color   "Text color Light [RBG]"        199, 199, 199
+@var text  theme-lighter-text-color "Text color Lighter [RBG]"      202, 202, 202
+@var text  theme-main-color       	"Accent color [RBG]"            0, 255, 255
+@var text  theme-main-used-color    "Accent 'Used' color [RBG]"     0, 200, 255, 0.55
+@var text  theme-background-color	"Background color [RBG]"       	0, 0, 0
+@var text  theme-button-color		"Button color [RBG]"       		0, 255, 255
+@var text  theme-button-text-color	"Button text color [RBG]"       0, 0, 0
+
+==/UserStyle==*/
+
+@-moz-document domain("anilist.co") {
+	:root,
+	.site-theme-dark,
+	.site-theme-contrast {
+		--color-background: theme-background-color; /* Main Backgrounds */
+		--color-foreground: theme-foreground-color; /* Main Foregrounds */
+		--color-foreground-grey: theme-foreground-color; /* Milestones */
+		--color-foreground-grey-dark: 234, 236, 237;
+		--color-foreground-blue: theme-background-color;
+		--color-foreground-blue-dark: 241, 243, 247;
+		--color-background-blue-dark: 31, 35, 45;
+		--color-overlay: 31, 38, 49;
+		--color-shadow: 49, 54, 68;
+		--color-shadow-dark: 6, 13, 34;
+		--color-shadow-blue: 103, 132, 187;
+		--color-text: theme-text-color; /* Main Text */
+		/* Main Light Text
+        Inactive Tab Text, Stats Text 
+         */
+		--color-text-light: theme-light-text-color;
+		/* Main Lighter Text
+        Timestamp,
+        Sidebar - Inactive text
+        */
+		--color-text-lighter: theme-lighter-text-color;
+		--color-text-bright: theme-text-color;
+		/* Main Blue Color
+        Links, 
+        Accent Color Blue
+        */
+		--color-blue: theme-main-color;
+		/* Main Blue Color Dimmed
+    
+         */
+		--color-blue-dim: theme-main-color;
+		/* Active Tab Text
+         */
+		--color-white: 255, 255, 255;
+		--color-black: 0, 0, 0;
+		/* Red Color
+        Liked posts
+        Unwatched Airing Anime
+        Remove Friend Icon
+         */
+		--color-red: theme-main-used-color;
+		--color-peach: theme-main-color; /* Notification Color */
+		--color-orange: 247, 154, 99;
+		--color-yellow: 247, 191, 99;
+		--color-green: 123, 213, 85;
+		--color-background-100: theme-foreground-color; /* Dropdown menu */
+		--color-background-200: theme-foreground-color; /* Bottom part of Dropdown Menu */
+		--color-background-300: 221, 230, 238;
+		--color-background-400: 201, 215, 227;
+		--color-background-500: 173, 192, 210;
+		--color-background-600: theme-text-color;
+		--color-background-700: theme-text-color;
+		--color-background-800: theme-text-color;
+		--color-background-900: 81, 97, 112;
+		--color-background-1000: 64, 78, 92;
+		--color-background-1100: 38, 52, 63;
+		--color-background-1200: 27, 30, 31;
+		--color-gray-100: theme-foreground-color;
+		--color-gray-200: theme-foreground-color;
+		--color-gray-300: 221, 230, 238;
+		--color-gray-400: 201, 215, 227;
+		--color-gray-500: 173, 192, 210;
+		--color-gray-600: theme-text-color;
+		--color-gray-700: theme-text-color;
+		--color-gray-800: theme-text-color;
+		--color-gray-900: 81, 97, 112;
+		--color-gray-1000: 64, 78, 92;
+		--color-gray-1100: 38, 52, 63;
+		--color-gray-1200: 27, 30, 31;
+		--color-blue-100: 247, 250, 252;
+		--color-blue-200: 236, 246, 254;
+		--color-blue-300: 201, 232, 255;
+		--color-blue-400: 143, 215, 255;
+		--color-blue-500: 111, 200, 255;
+		--color-blue-600: 61, 180, 242;
+		--color-blue-700: 8, 143, 214;
+		--color-blue-800: 12, 101, 166;
+		--color-blue-900: 11, 70, 113;
+		--color-blue-1000: 16, 61, 85;
+		--color-green-100: 245, 249, 243;
+		--color-green-200: 226, 246, 217;
+		--color-green-300: 160, 241, 126;
+		--color-green-400: 119, 220, 76;
+		--color-green-500: 83, 175, 45;
+		--color-green-600: 56, 126, 26;
+		--color-green-700: 46, 90, 27;
+		--color-green-800: 41, 66, 31;
+		--color-red-100: 255, 244, 246;
+		--color-red-200: 254, 212, 220;
+		--color-red-300: 255, 140, 160;
+		--color-red-400: 236, 41, 75;
+		--color-red-500: 213, 0, 37;
+		--color-red-600: 165, 1, 29;
+		--color-red-700: 117, 0, 20;
+	}
+
+	.reset-btn[data-v-119352f9] {
+		color: rgb(theme-background-color);
+	}
+
+	.site-theme-dark .nav-unscoped {
+		background-color: rgb(theme-foreground-color);
+		color: rgb(theme-text-color);
+	}
+
+	.search[data-v-62eacfff] svg {
+		color: rgb(theme-text-color);
+	}
+
+	.feed-type-toggle > div.active[data-v-8209bd04] {
+		background-color: lighten(rgb(theme-foreground-color), 5);
+	}
+
+	.user .notification-dot[data-v-62eacfff] {
+		color: rgb(theme-foreground-color);
+	}
+
+	.list[data-v-5776f768],
+	.list .dropdown[data-v-5776f768] {
+		color: rgb(theme-button-text-color);
+	}
+
+	.el-dropdown-menu {
+		background-color: rgb(theme-foreground-color);
+	}
+	.el-dropdown-menu__item--divided {
+		border-top-color: rgb(theme-background-color);
+	}
+	.el-dropdown-menu__item--divided:before {
+		background-color: rgb(theme-foreground-color);
+	}
+}

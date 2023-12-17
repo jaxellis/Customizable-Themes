@@ -21,6 +21,14 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 	<tbody>
 		<tr>
 			<td>
+				<a href="https://www.anilist.co/"><img src="https://www.google.com/s2/favicons?domain=anilist.co/"> Anilist</a>
+			</td>
+			<td>
+				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/anilist.co/"> 1.0.0</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
 				<a href="https://www.crunchyroll.com/"><img src="https://www.google.com/s2/favicons?domain=crunchyroll.com"/> Crunchyroll</a>
 			</td>
 			<td>
@@ -59,7 +67,6 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/mangadex.org/"> 1.0.0</a>
 			</td>
 		</tr>
-		<tr></tr>
 	</tbody>
 </table>
 
