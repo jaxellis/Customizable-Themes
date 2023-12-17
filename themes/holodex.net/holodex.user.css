@@ -1,0 +1,94 @@
+/* ==UserStyle==
+@name           Holodex Customizable Theme
+@namespace      https://github.com/jaxellis/Customizable-Themes
+@version        1.0.0
+@description    Customizable theme for the holodex site
+@author         Jaxellis
+@homepageURL    https://github.com/jaxellis/Customizable-Themes/tree/main/themes/holodex.net/
+@updateURL      https://github.com/jaxellis/Customizable-Themes/tree/main/themes/holodex.net/holodex.user.css
+@license        GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
+
+@preprocessor   stylus
+
+@var color  theme-background-color	"Background color"       	rgb(0, 0, 0)
+@var color  theme-main-color        "Accent color"      		rgb(0, 255, 255)
+@var color  theme-secondary-color   "2nd Accent color" 		    rgba(0, 175, 200)
+@var color  theme-text-color        "Text color"            	rgb(197, 197, 197)
+
+==/UserStyle== */
+@-moz-document domain("holodex.net") {
+	:root {
+		--v-anchor-base: theme-main-color;
+		--v-primary-base: theme-main-color;
+		--v-primary-lighten5: lighten(theme-main-color, 15%);
+		--v-primary-lighten4: lighten(theme-main-color, 12%);
+		--v-primary-lighten3: lighten(theme-main-color, 9%);
+		--v-primary-lighten2: lighten(theme-main-color, 6%);
+		--v-primary-lighten1: lighten(theme-main-color, 3%);
+		--v-primary-darken1: darken(theme-main-color, 3%);
+		--v-primary-darken2: darken(theme-main-color, 6%);
+		--v-primary-darken3: darken(theme-main-color, 9%);
+		--v-primary-darken4: darken(theme-main-color, 12%);
+		--v-secondary-base: theme-secondary-color;
+		--v-secondary-lighten5: lighten(theme-secondary-color, 12%);
+		--v-secondary-lighten4: lighten(theme-secondary-color, 9%);
+		--v-secondary-lighten3: lighten(theme-secondary-color, 6%);
+		--v-secondary-lighten2: lighten(theme-secondary-color, 3%);
+		--v-secondary-lighten1: theme-secondary-color;
+		--v-secondary-darken1: darken(theme-secondary-color, 3%);
+		--v-secondary-darken2: darken(theme-secondary-color, 6%);
+		--v-secondary-darken3: darken(theme-secondary-color, 9%);
+		--v-secondary-darken4: darken(theme-secondary-color, 12%);
+		--v-background-base: theme-background-color;
+		--v-background-lighten5: lighten(theme-background-color, 15%);
+		--v-background-lighten4: lighten(theme-background-color, 12%);
+		--v-background-lighten3: lighten(theme-background-color, 9%);
+		--v-background-lighten2: lighten(theme-background-color, 6%);
+		--v-background-lighten1: lighten(theme-background-color, 3%);
+		--v-background-darken1: darken(theme-background-color, 1%);
+		--v-background-darken2: darken(theme-background-color, 2%);
+		--v-background-darken3: darken(theme-background-color, 3%);
+		--v-background-darken4: darken(theme-background-color, 4%);
+	}
+
+	/* Force background color on the background... */
+	#app {
+		background: var(--v-background-base) !important;
+		/* This is required becauase some genius put a style attribute in html instead of applying it through a style sheet */
+	}
+
+	/* Scrollbar Slider */
+	.scroll-bar::-webkit-scrollbar-thumb,
+	::-webkit-scrollbar-thumb {
+		background: var(--v-primary-base);
+	}
+
+	/* Scrollbar Full Bar */
+	.scroll-bar::-webkit-scrollbar-track,
+	::-webkit-scrollbar-track {
+		background: var(--v-background-lighten5);
+	}
+
+	/* Text Color */
+	.theme--dark,
+	.theme--dark.v-application,
+	.white--text {
+		color: theme-text-color !important;
+	}
+
+	/* Main Page Top Tab Bar (Live / Archive / Clips) */
+	/* Force element to use theme variables instead*/
+	.theme--dark.v-tabs > .v-tabs-bar {
+		background: var(--v-background-lighten2);
+	}
+
+	/* Remove badge from element, use accent theme for all text || Badge can cause unreadability on light accents */
+	.v-application .primary {
+		background-color: unset !important;
+		color: unset !important;
+	}
+	/* Account / Settings card */
+	.theme--dark.v-sheet {
+		background: var(--v-background-lighten2);
+	}
+}
