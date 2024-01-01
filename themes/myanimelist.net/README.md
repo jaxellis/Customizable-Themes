@@ -4,7 +4,7 @@ This MAL theme allows you to customize the background, foreground, text, and acc
 
 # Screenshots
 
-<img alt="Main Page" src="https://i.postimg.cc/FzwhRdkZ/myanimelist-net.png" width=33%><img alt="Anime Page" src="https://i.postimg.cc/Prkw2PRZ/myanimelist-net-anime-52991-Sousou-no-Frieren.png" width=33%><img alt="User Page" src="https://i.postimg.cc/Lsk7gqwT/myanimelist-net-profile-Leknaat.png" width=33%>
+<a href="https://i.postimg.cc/FzwhRdkZ/myanimelist-net.png"><img alt="Main Page" src="https://i.postimg.cc/FzwhRdkZ/myanimelist-net.png" width=33%></a><a href="https://i.postimg.cc/Prkw2PRZ/myanimelist-net-anime-52991-Sousou-no-Frieren.png"><img alt="Anime Page" src="https://i.postimg.cc/Prkw2PRZ/myanimelist-net-anime-52991-Sousou-no-Frieren.png" width=33%></a><a href="https://i.postimg.cc/Lsk7gqwT/myanimelist-net-profile-Leknaat.png"><img alt="User Page" src="https://i.postimg.cc/Lsk7gqwT/myanimelist-net-profile-Leknaat.png" width=33%></a>
 
 # Installation
 
