@@ -196,11 +196,6 @@
 			width: unset !important;
 		}
 
-		/* Seasonal Page */
-		.navi-seasonal {
-			width: unset !important;
-		}
-
 		/* Entry Page */
 		/* Title */
 		.page-common .h1.edit-info {
@@ -208,7 +203,7 @@
 		}
 	}
 }
-@-moz-document regexp(".*myanimelist.net\\/profile.*") {
+@-moz-document regexp("http(s|)://myanimelist.net\\/profile.*") {
 	/* Theming */
 	/* Profile Links Under Profile Picture */
 	.user-profile li {
@@ -252,18 +247,20 @@
 	}
 
 	/* Wide Mode */
-	/* Profile Stats Bar  */
-	.stats-graph {
-		width: unset !important;
-	}
+	if wide-mode-enabled==1 {
+		/* Profile Stats Bar  */
+		.stats-graph {
+			width: unset !important;
+		}
 
-	.stats-graph {
-		display: flex !important;
-		justify-content: space-between;
+		.stats-graph {
+			display: flex !important;
+			justify-content: space-between;
+		}
 	}
 }
 
-@-moz-document regexp(".*myanimelist.net\\/news.*") {
+@-moz-document regexp("http(s|)://myanimelist.net\\/news.*") {
 	if wide-mode-enabled==1 {
 		/* Wide Mode */
 		/* News Page Left Column */
@@ -273,6 +270,16 @@
 
 		/* News Page Bredcrumbs */
 		body.news .news-breadcrumbs {
+			width: unset !important;
+		}
+	}
+}
+
+@-moz-document regexp("http(s|)://myanimelist.net/anime/season.*") {
+	/* Wide Mode */
+	if wide-mode-enabled==1 {
+		/* Filter / Nav */
+		.navi-seasonal {
 			width: unset !important;
 		}
 	}
