@@ -68,7 +68,19 @@
 			color: theme-text-color !important;
 		}
 	}
-
+	/* Buttons */
+	.inputButton {
+		background-color: theme-foreground-color !important;
+		&:hover {
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
+	}
+	/* Default Table Theming */
+	#contentWrapper #content #dialog,
+	#dialog div {
+		background-color: theme-foreground-color !important;
+		border: none !important;
+	}
 	/* Only appears when logged out */
 	.external-link,
 	mal-tooltip::part(tooltip),
@@ -195,6 +207,21 @@
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color !important;
 		}
+	}
+
+
+	/* Annoucement Ribbon */
+	.text-ribbon div {
+		background-color: theme-foreground-color !important;
+		&:hover {
+			background-color: theme-background-color !important;
+			box-shadow: inset 0 0 8px theme-main-color !important;
+		}
+	}
+
+	/* Select Boxes */
+	select {
+		background-color: theme-foreground-color !important;
 	}
 
 	/* Footer */
