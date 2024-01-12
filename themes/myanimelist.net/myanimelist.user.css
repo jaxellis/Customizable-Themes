@@ -108,6 +108,22 @@
 	.wrapper #menu div {
 		background: theme-foreground-color !important;
 	}
+
+	#horiznav_nav .horiznav_active {
+		background-color: theme-background-color !important;
+		color: theme-text-color !important;
+	}
+	#horiznav_nav li {
+		background-color: theme-foreground-color !important;
+	}
+	#horiznav_nav li a {
+		background-color: theme-foreground-color !important;
+		&:hover {
+			background-color: theme-background-color !important;
+			box-shadow: inset 0 0 8px theme-main-color !important;
+		}
+	}
+
 	/* Nav Menu Dropdown*/
 	#nav > li * {
 		background-color: theme-foreground-color !important;
@@ -148,16 +164,6 @@
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color !important;
 		}
-	}
-
-	/* Private Messages */
-	#horiznav_nav .horiznav_active {
-		background-color: theme-background-color !important;
-		color: theme-text-color !important;
-	}
-	#horiznav_nav li a:hover {
-		background-color: theme-background-color !important;
-		box-shadow: inset 0 0 8px theme-main-color !important;
 	}
 
 	/* Footer */
