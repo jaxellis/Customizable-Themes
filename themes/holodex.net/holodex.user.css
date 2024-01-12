@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Holodex Customizable Theme
 @namespace      https://github.com/jaxellis/Customizable-Themes
-@version        1.0.0
+@version        1.0.1
 @description    Customizable theme for the holodex site
 @author         Jaxellis
 @homepageURL    https://github.com/jaxellis/Customizable-Themes/tree/main/themes/holodex.net/
@@ -70,9 +70,9 @@
 	}
 
 	/* Text Color */
-	.theme--dark,
+	/* theme-dark can't be used as it overrides button active colors when watching videos */
 	.theme--dark.v-application,
-	.white--text {
+	.white--text, .v-application .white--text, .v-list-item {
 		color: theme-text-color !important;
 	}
 
