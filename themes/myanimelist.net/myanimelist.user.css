@@ -135,7 +135,38 @@
 
 	/* Search Bar */
 	.page-common #topSearchText {
+		border-color: theme-main-color !important;
+		background-color: theme-background-color;
+		color: theme-text-color;
+	}
+	#topSearchValue {
+		background-color: theme-background-color !important;
+		color: theme-text-color !important;
 		border: none !important;
+	}
+	#topSearchButon {
+		background-color: theme-background-color !important;
+		border-color: theme-main-color !important;
+	}
+
+	/* Search Results */
+	#topSearchResultList .list.separator * {
+		background-color: theme-background-color !important;
+	}
+
+	#topSearchResultList .on .info {
+		background: theme-background-color !important;
+		&:hover {
+			box-shadow: inset 0 0 8px theme-main-color !important;
+		}
+	}
+
+	#topSearchResultList .on .info * {
+		background-color: transparent !important;
+	}
+	#topSearchResultList .list-bottom:hover {
+		background: theme-background-color !important;
+		box-shadow: inset 0 0 8px theme-main-color !important;
 	}
 
 	/* Account Menu Dropdown*/
@@ -275,7 +306,7 @@
 	.left-info-block-manga-store-button {
 		background-color: theme-foreground-color !important;
 	}
-	
+
 	/* Wide Mode */
 	if wide-mode-enabled==1 {
 		/* Title */
