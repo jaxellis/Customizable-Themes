@@ -195,12 +195,6 @@
 		.news-list .news-unit {
 			width: unset !important;
 		}
-
-		/* Entry Page */
-		/* Title */
-		.page-common .h1.edit-info {
-			width: 100%;
-		}
 	}
 }
 @-moz-document regexp("http(s|)://myanimelist.net\\/profile.*") {
@@ -260,6 +254,36 @@
 	}
 }
 
+@-moz-document regexp("http(s|)://myanimelist.net\\/(manga|anime).*") {
+	/* "Add to" Buttons */
+	div.profileRows a,
+	div#profileRows a {
+		background-color: theme-foreground-color !important;
+		border-color: theme-main-color !important;
+		&:hover {
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
+	}
+
+	/* Popup window when going to edit an entry */
+	.edit-info div#editdiv,
+	div#editdiv div {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Buy on Manga Store Button */
+	.left-info-block-manga-store-button {
+		background-color: theme-foreground-color !important;
+	}
+	
+	/* Wide Mode */
+	if wide-mode-enabled==1 {
+		/* Title */
+		#contentWrapper .h1-title {
+			width: 100% !important;
+		}
+	}
+}
 @-moz-document regexp("http(s|)://myanimelist.net\\/news.*") {
 	if wide-mode-enabled==1 {
 		/* Wide Mode */
