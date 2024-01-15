@@ -89,8 +89,10 @@
 	}
 
 	/* Text Boxes */
+	input,
 	textarea {
 		background-color: theme-foreground-color !important;
+		border-color: theme-main-color !important;
 		color: theme-text-color !important;
 	}
 
