@@ -51,9 +51,33 @@
 		background-color: theme-background-color !important;
 	}
 
+	/* Buttons */
+	.inputButton {
+		background-color: theme-foreground-color !important;
+		&:hover {
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
+	}
+
+	/* Icons */
+	i {
+		color: theme-main-color !important;
+
+		&:hover {
+			color: theme-text-color !important;
+		}
+	}
+
 	/* Links */
 	a {
 		color: theme-main-color !important;
+	}
+
+	/* Select Boxes */
+	select {
+		background-color: theme-foreground-color !important;
+		border-color: theme-main-color !important;
+		color: theme-text-color
 	}
 
 	/* Text */
@@ -68,23 +92,6 @@
 	textarea {
 		background-color: theme-foreground-color !important;
 		color: theme-text-color !important;
-	}
-
-	/* Icons */
-	i {
-		color: theme-main-color !important;
-
-		&:hover {
-			color: theme-text-color !important;
-		}
-	}
-
-	/* Buttons */
-	.inputButton {
-		background-color: theme-foreground-color !important;
-		&:hover {
-			box-shadow: inset 0 0 8px theme-main-color;
-		}
 	}
 
 	/* Default Table Theming */
@@ -208,7 +215,7 @@
 	.header-profile-link > i:hover {
 		color: theme-main-color !important;
 	}
-	
+
 	.header-profile.link-bg {
 		background-color: theme-foreground-color !important;
 
@@ -252,13 +259,6 @@
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color !important;
 		}
-	}
-
-	/* Select Boxes */
-	select {
-		background-color: theme-foreground-color !important;
-		border-color: theme-main-color !important;
-		color: theme-text-color
 	}
 
 	/* Footer */
