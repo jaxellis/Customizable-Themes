@@ -257,6 +257,8 @@
 	/* Select Boxes */
 	select {
 		background-color: theme-foreground-color !important;
+		border-color: theme-main-color !important;
+		color: theme-text-color
 	}
 
 	/* Footer */
