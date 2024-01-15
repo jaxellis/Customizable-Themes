@@ -308,6 +308,12 @@
 			width: unset !important;
 		}
 
+		/* 2nd Header h1 */
+		/* Used on multiple pages // entry+people */
+		#contentWrapper .h1-title {
+			width: 100% !important;
+		}
+
 		/* Main Page Seasonal Anime Carousel */
 		body.index .left-column {
 			width: var(--left-column-width) !important;
@@ -401,14 +407,6 @@
 	/* Buy on Manga Store Button */
 	.left-info-block-manga-store-button {
 		background-color: theme-foreground-color !important;
-	}
-
-	/* Wide Mode */
-	if wide-mode-enabled==1 {
-		/* Title */
-		#contentWrapper .h1-title {
-			width: 100% !important;
-		}
 	}
 }
 
