@@ -205,6 +205,10 @@
 	}
 
 	/* Account Menu Dropdown*/
+	.header-profile-link > i:hover {
+		color: theme-main-color !important;
+	}
+	
 	.header-profile.link-bg {
 		background-color: theme-foreground-color !important;
 
