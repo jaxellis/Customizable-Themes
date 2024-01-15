@@ -144,9 +144,13 @@
 		background: theme-foreground-color !important;
 	}
 
-	#horiznav_nav .horiznav_active {
-		background-color: theme-background-color !important;
-		color: theme-text-color !important;
+	#horiznav_nav {
+		border-color: theme-main-color !important;
+
+		&.horiznav_active {
+			background-color: theme-background-color !important;
+			color: theme-text-color !important;
+		}
 	}
 
 	#horiznav_nav li {
