@@ -96,6 +96,11 @@
 		color: theme-text-color !important;
 	}
 
+	/* 'Success' box */
+	.goodresult {
+		border-color: theme-main-color !important;
+	}
+
 	/* Default Table Theming */
 	#contentWrapper #content #dialog,
 	#dialog div {
