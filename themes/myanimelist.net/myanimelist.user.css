@@ -25,10 +25,12 @@
 			@media (min-width: 2115px) {
 				--left-column-width: 88%;
 			}
+
 			/* 1080p (ish) */
 			@media (min-width: 1600px) and (max-width: 2114px) {
 				--left-column-width: 85%;
 			}
+
 			/* >1080p (ish) */
 			@media (max-width: 1599px) {
 				--left-column-width: 65%;
@@ -43,6 +45,7 @@
 	#contentWrapper div h1 {
 		background-color: theme-background-color !important;
 	}
+
 	/* This is for loading screens */
 	body:not(.ownlist) {
 		background-color: theme-background-color !important;
@@ -60,20 +63,22 @@
 	.text {
 		color: theme-text-color !important;
 	}
-	
+
 	/* Text Boxes */
 	textarea {
 		background-color: theme-foreground-color !important;
-		color: theme-text-color  !important; 
+		color: theme-text-color !important;
 	}
 
 	/* Icons */
 	i {
 		color: theme-main-color !important;
+
 		&:hover {
 			color: theme-text-color !important;
 		}
 	}
+
 	/* Buttons */
 	.inputButton {
 		background-color: theme-foreground-color !important;
@@ -81,12 +86,14 @@
 			box-shadow: inset 0 0 8px theme-main-color;
 		}
 	}
+
 	/* Default Table Theming */
 	#contentWrapper #content #dialog,
 	#dialog div {
 		background-color: theme-foreground-color !important;
 		border: none !important;
 	}
+
 	/* Only appears when logged out */
 	.external-link,
 	mal-tooltip::part(tooltip),
@@ -117,6 +124,7 @@
 	#headerSmall {
 		background-color: theme-foreground-color !important;
 	}
+
 	body.index .left-column {
 		border-color: theme-foreground-color !important;
 	}
@@ -131,11 +139,14 @@
 		background-color: theme-background-color !important;
 		color: theme-text-color !important;
 	}
+
 	#horiznav_nav li {
 		background-color: theme-foreground-color !important;
 	}
+
 	#horiznav_nav li a {
 		background-color: theme-foreground-color !important;
+
 		&:hover {
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color !important;
@@ -145,6 +156,7 @@
 	/* Nav Menu Dropdown*/
 	#nav > li * {
 		background-color: theme-foreground-color !important;
+
 		&:hover {
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color;
@@ -157,11 +169,14 @@
 		background-color: theme-background-color !important;
 		color: theme-text-color !important;
 	}
+
 	#topSearchValue {
 		background-color: theme-background-color !important;
 		color: theme-text-color !important;
 		border: none !important;
 	}
+
+	/* Yeah they misspelled button */
 	#topSearchButon {
 		background-color: theme-background-color !important;
 		border-color: theme-main-color !important;
@@ -174,6 +189,7 @@
 
 	#topSearchResultList .on .info {
 		background: theme-background-color !important;
+
 		&:hover {
 			box-shadow: inset 0 0 8px theme-main-color !important;
 		}
@@ -182,6 +198,7 @@
 	#topSearchResultList .on .info * {
 		background-color: transparent !important;
 	}
+
 	#topSearchResultList .list-bottom:hover {
 		background: theme-background-color !important;
 		box-shadow: inset 0 0 8px theme-main-color !important;
@@ -197,8 +214,10 @@
 			box-shadow: inset 0 0 8px theme-main-color;
 		}
 	}
+
 	.header-menu-dropdown li * {
 		background-color: theme-foreground-color !important;
+
 		&:hover {
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color;
@@ -209,6 +228,7 @@
 	.header-notification-dropdown-inner h3 {
 		background-color: theme-foreground-color !important;
 	}
+
 	.header-notification-item,
 	.header-notification-view-all a {
 		background-color: theme-foreground-color !important;
@@ -220,10 +240,10 @@
 		}
 	}
 
-
 	/* Annoucement Ribbon */
 	.text-ribbon div {
 		background-color: theme-foreground-color !important;
+
 		&:hover {
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color !important;
@@ -241,6 +261,7 @@
 	.footer-ranking {
 		background-color: theme-background-color !important;
 	}
+
 	/* Wide Mode */
 	if wide-mode-enabled==1 {
 		/* Main Body */
@@ -266,12 +287,13 @@
 		}
 	}
 }
+
 @-moz-document regexp("http(s|)://myanimelist.net\\/profile.*") {
-	/* Theming */
 	/* Profile Links Under Profile Picture */
 	.user-profile li {
 		background-color: theme-foreground-color !important;
 	}
+
 	.user-profile li:has(> a):hover {
 		box-shadow: inset 0 0 8px theme-main-color;
 	}
@@ -293,6 +315,7 @@
 	/* Anime / Manga list buttons */
 	.btn-profile-submit {
 		background-color: theme-foreground-color !important;
+
 		&:hover {
 			background-color: theme-background-color !important;
 			box-shadow: inset 0 0 8px theme-main-color;
@@ -329,6 +352,7 @@
 	div#profileRows a {
 		background-color: theme-foreground-color !important;
 		border-color: theme-main-color !important;
+
 		&:hover {
 			box-shadow: inset 0 0 8px theme-main-color;
 		}
@@ -353,6 +377,7 @@
 		}
 	}
 }
+
 @-moz-document regexp("http(s|)://myanimelist.net\\/news.*") {
 	if wide-mode-enabled==1 {
 		/* Wide Mode */
