@@ -182,9 +182,14 @@
 	}
 
 	/* Account Menu Dropdown*/
-	.header-profile.link-bg.on {
-		background-color: theme-background-color !important;
-		box-shadow: inset 0 0 8px theme-main-color;
+	.header-profile.link-bg {
+		background-color: theme-foreground-color !important;
+
+		&.on,
+		&:hover {
+			background-color: theme-background-color !important;
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
 	}
 	.header-menu-dropdown li * {
 		background-color: theme-foreground-color !important;
