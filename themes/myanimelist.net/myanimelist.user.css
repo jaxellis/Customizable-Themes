@@ -60,6 +60,12 @@
 	.text {
 		color: theme-text-color !important;
 	}
+	
+	/* Text Boxes */
+	textarea {
+		background-color: theme-foreground-color !important;
+		color: theme-text-color  !important; 
+	}
 
 	/* Icons */
 	i {
