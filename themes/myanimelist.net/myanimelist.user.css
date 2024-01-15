@@ -138,9 +138,20 @@
 	#headerSmall {
 		background-color: theme-foreground-color !important;
 	}
-
+	
+	/* Main Content Elements */
 	body.index .left-column {
 		border-color: theme-foreground-color !important;
+	}
+	.page-common #content {
+		border-color: theme-foreground-color;
+	}
+	
+	/* 2nd Header */
+	.page-common .h1 {
+		border-color: theme-foreground-color !important;
+		border-bottom-color: theme-main-color !important;
+		color: theme-text-color;
 	}
 
 	/* Nav */
