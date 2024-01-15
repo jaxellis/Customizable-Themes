@@ -148,8 +148,8 @@
 	/* Search Bar */
 	.page-common #topSearchText {
 		border-color: theme-main-color !important;
-		background-color: theme-background-color;
-		color: theme-text-color;
+		background-color: theme-background-color !important;
+		color: theme-text-color !important;
 	}
 	#topSearchValue {
 		background-color: theme-background-color !important;
