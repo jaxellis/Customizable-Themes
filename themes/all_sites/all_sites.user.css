@@ -1,0 +1,79 @@
+/* ==UserStyle==
+@name           All Site CSS
+@namespace      https://github.com/jaxellis/Customizable-Themes
+@version        1.0.0
+@description    Customizable theme for MyAnimeList
+@author         Jaxellis
+@homepageURL    https://github.com/jaxellis/Customizable-Themes/tree/main/themes/all_sites
+@supportURL 	https://github.com/jaxellis/Customizable-Themes/issues
+@updateURL      https://github.com/jaxellis/Customizable-Themes/tree/main/themes/all_sites/all_sites.user.css
+@license        GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
+
+@preprocessor   stylus
+@var color		theme-background-color	"Background color"       				rgb(0, 0, 0)
+@var color  	theme-foreground-color	"Foreground color"       				rgb(10, 10, 10)
+@var color  	theme-main-color        "Main Accent color"      				rgb(0, 255, 255)
+@var color  	theme-text-color        "Text color"            				rgb(197, 197, 197)
+==/UserStyle== */
+
+/* Cloudflare pages */
+/* Main Background */
+#cf-wrapper,
+#cf-wrapper #cf-error-details {
+	background: theme-background-color;
+}
+/* Fix CF div not attaching to bottom of page */
+@media screen and (max-height: 1081px) {
+	#cf-wrapper {
+		height: 1080px;
+	}
+}
+
+@media screen and (max-height: 1441px) {
+	#cf-wrapper {
+		height: 1440px;
+	}
+}
+
+/* Remove White Error Screenshot */
+.cf-screenshot-container {
+	display: none !important;
+}
+
+/* Background of middle section containing hCaptcha */
+#cf-wrapper #cf-error-details .cf-highlight {
+	background: theme-foreground-color;
+}
+
+/* Background of hCaptcha */
+#cf-wrapper #cf-error-details .cf-highlight .cf-highlight-inverse {
+	background-color: theme-foreground-color;
+}
+
+/* Text Colors */
+#cf-wrapper h1,
+#cf-wrapper h2,
+#cf-wrapper h3,
+#cf-wrapper h4,
+#cf-wrapper h5,
+#cf-wrapper h6,
+#cf-wrapper .cf-subheadline,
+#cf-wrapper p {
+	color: theme-text-color;
+}
+
+/* Link Color */
+#cf-wrapper a {
+	color: theme-main-color;
+}
+
+/* Link Hover Color */
+#cf-wrapper a:hover {
+	color: darken(theme-main-color, 5%);
+}
+
+/* CF Error Pages */
+div#cf-error-details > .my-8.bg-gradient-gray {
+	background-image: unset;
+	background-color: theme-foreground-color;
+}

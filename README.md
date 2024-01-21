@@ -19,6 +19,14 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
   </tr>
 	</thead>
 	<tbody>
+			<tr>
+			<td>
+			<div title="Generic CSS to use for ALL sites."> All Sites</div>
+			</td>
+			<td>
+				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/all_sites/"> 1.0.0</a>
+			</td>
+		</tr>
 		<tr>
 			<td>
 				<a href="https://www.anilist.co/"><img src="https://www.google.com/s2/favicons?domain=anilist.co/"> Anilist</a>
