@@ -85,6 +85,15 @@
 	.site-theme-dark .nav-unscoped {
 		background-color: rgb(theme-foreground-color);
 		color: rgb(theme-text-color);
+		/* Upon Scrolling Down */
+		&.transparent {
+			background-color: rgba(theme-foreground-color, 0.5);
+
+			/* Hovering While Scrolled Down*/
+			&:hover {
+				background-color: darken(rgb(theme-foreground-color), 0.5);
+			}
+		}
 	}
 
 	/* Search Icon Color */
@@ -116,5 +125,10 @@
 	}
 	.el-dropdown-menu__item--divided:before {
 		background-color: rgb(theme-foreground-color);
+	}
+
+	/* Footer */
+	.footer {
+		background-color: rgb(theme-foreground-color) !important;
 	}
 }
