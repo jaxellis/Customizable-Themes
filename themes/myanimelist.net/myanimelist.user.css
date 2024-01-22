@@ -525,3 +525,10 @@
 		border-radius: 5%;
 	}
 }
+
+@-moz-document regexp("http(s|)://myanimelist.net/history/.*/updates") {
+	/* Friend Update Notes */
+	.history_content_wrapper .history-updates .notes {
+		background-color: theme-foreground-color !important;
+	}
+}
