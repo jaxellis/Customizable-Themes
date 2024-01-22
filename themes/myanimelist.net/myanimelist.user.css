@@ -10,12 +10,17 @@
 @license        GPL-3.0-or-later; https://www.gnu.org/licenses/gpl-3.0.txt
 
 @preprocessor   stylus
-@var checkbox	wide-mode-enabled		"Wide Mode"       						1
-@var color		theme-background-color	"Background color"       				rgb(0, 0, 0)
-@var color  	theme-foreground-color	"Foreground color"       				rgb(10, 10, 10)
-@var color  	theme-main-color        "Main Accent color"      				rgb(0, 255, 255)
-@var color  	theme-text-color        "Text color"            				rgb(197, 197, 197)
-@var color  	theme-current-color		"Watching/Reading color"       			rgb(0, 255, 255)
+@var checkbox	wide-mode-enabled		"Wide Mode"       				1
+@var color		theme-background-color	"Background"       				rgba(0, 0, 0, 1)
+@var color  	theme-foreground-color	"Foreground"       				rgba(10, 10, 10, 1)
+@var color  	theme-main-color        "Main Accent"      				rgba(0, 255, 255, 1)
+@var color  	theme-text-color        "Text"            				rgba(197, 197, 197, 1)
+@var color  	theme-completed-color	"Completed"       				rgba(30, 80, 200, 1)
+@var color  	theme-planning-color	"Planning"       				rgba(50, 50, 50, 1)
+@var color  	theme-current-color		"Watching/Reading"       		rgba(0, 255, 255, 1)
+@var color  	theme-onhold-color		"On-Hold"       				rgba(255, 220, 100, 1)
+@var color  	theme-dropped-color		"Dropped"       				rgba(255, 0, 0, 1)
+
 ==/UserStyle== */
 @-moz-document regexp("http(s|)://myanimelist.net\\/(?!animelist|mangalist).*") {
 	/* We use regex here to not overwrite custom list themes */
@@ -370,6 +375,41 @@
 	.graph.watching,
 	.circle.watching:after {
 		background-color: theme-current-color !important;
+	}
+
+	/* PTW/PTR Anime/Manga color */
+	.graph-inner.plan_to_watch,
+	.graph.plan_to_watch,
+	.circle.plan_to_watch:after,
+	.graph-inner.plan_to_read,
+	.graph.plan_to_read,
+	.circle.plan_to_read:after {
+		background-color: theme-planning-color !important;
+	}
+
+	/* Completed Anime/Manga color */
+	.graph-inner.completed,
+	.graph.completed,
+	.circle.completed:after {
+		background-color: theme-completed-color !important;
+	}
+
+	/* On-Hold Anime/Manga color */
+	.graph-inner.on_hold,
+	.graph.on_hold,
+	.circle.on_hold:after {
+		background-color: theme-onhold-color !important;
+	}
+
+	/* Dropped Anime/Manga color */
+	.graph-inner.dropped,
+	.graph.dropped,
+	.circle.dropped:after {
+		background-color: theme-dropped-color !important;
+	}
+
+	.profile-about-user table tbody tr td {
+		background-color: transparent !important;
 	}
 
 	/* Wide Mode */
