@@ -112,6 +112,12 @@
 		background-color: theme-foreground-color !important;
 		border: none !important;
 	}
+	tbody tr:nth-child(odd) td {
+		background-color: lighten(theme-foreground-color, 2%) !important;
+	}
+	tbody tr:nth-child(even) td {
+		background-color: theme-foreground-color !important;
+	}
 
 	/* Only appears when logged out */
 	.external-link,
