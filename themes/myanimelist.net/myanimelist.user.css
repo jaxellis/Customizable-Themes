@@ -300,6 +300,65 @@
 		}
 	}
 
+	/* Border/Background for Below Elements  */
+	.work-graph {
+		background-color: theme-foreground-color !important;
+		border-color: theme-main-color !important;
+	}
+
+	/* The below only works with a single element, combining CW/CR or PTR/PTW will break */
+	/* nots are used to target text*/
+	/* CW/CR Colors */
+	.watching:not(.work-status-num, .circle, .text),
+	.watching::after {
+		background-color: theme-current-color !important;
+		color: theme-background-color !important;
+	}
+
+	.reading:not(.work-status-num, .circle, .text),
+	.reading::after {
+		background-color: theme-current-color !important;
+		color: theme-background-color !important;
+	}
+
+	/* PTW/PTR color */
+	.plan_to_watch:not(.work-status-num, .circle, .text),
+	.plantowatch,
+	.plan_to_watch::after {
+		background-color: theme-planning-color !important;
+		color: theme-background-color !important;
+	}
+	.plan_to_read:not(.work-status-num, .circle, .text),
+	.plantoread,
+	.plan_to_read::after {
+		background-color: theme-planning-color !important;
+		color: theme-background-color !important;
+	}
+	/* Completed color */
+	.completed:not(.work-status-num, .circle, .text),
+	.completed::after {
+		background-color: theme-completed-color !important;
+		color: theme-background-color !important;
+	}
+
+	/* On-Hold color */
+	.on_hold:not(.work-status-num, .circle, .text),
+	.on_hold::after {
+		background-color: theme-onhold-color !important;
+		color: theme-background-color !important;
+	}
+
+	/* Dropped Color */
+	.dropped:not(.work-status-num, .circle, .text),
+	.dropped::after {
+		background-color: theme-dropped-color !important;
+		color: theme-background-color !important;
+	}
+
+	.addtolist {
+		background-color: theme-foreground-color !important;
+	}
+
 	/* Footer */
 	/* Footer Ranking appears only when logged out (?) */
 	.page-common #footer-block,
@@ -381,47 +440,6 @@
 	/* Stats Bar Background */
 	.stats-graph {
 		background-color: theme-background-color !important;
-	}
-
-	/* Current Anime/Manga color */
-	.graph-inner.reading,
-	.graph.reading,
-	.circle.reading:after,
-	.graph-inner.watching,
-	.graph.watching,
-	.circle.watching:after {
-		background-color: theme-current-color !important;
-	}
-
-	/* PTW/PTR Anime/Manga color */
-	.graph-inner.plan_to_watch,
-	.graph.plan_to_watch,
-	.circle.plan_to_watch:after,
-	.graph-inner.plan_to_read,
-	.graph.plan_to_read,
-	.circle.plan_to_read:after {
-		background-color: theme-planning-color !important;
-	}
-
-	/* Completed Anime/Manga color */
-	.graph-inner.completed,
-	.graph.completed,
-	.circle.completed:after {
-		background-color: theme-completed-color !important;
-	}
-
-	/* On-Hold Anime/Manga color */
-	.graph-inner.on_hold,
-	.graph.on_hold,
-	.circle.on_hold:after {
-		background-color: theme-onhold-color !important;
-	}
-
-	/* Dropped Anime/Manga color */
-	.graph-inner.dropped,
-	.graph.dropped,
-	.circle.dropped:after {
-		background-color: theme-dropped-color !important;
 	}
 
 	.profile-about-user table tbody tr td {
