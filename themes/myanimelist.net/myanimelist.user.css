@@ -366,6 +366,16 @@
 			box-shadow: inset 0 0 8px theme-main-color;
 		}
 	}
+	/* Bar Background */
+	.profile .statistics-updates .graph {
+		background-color: theme-foreground-color !important;
+		border-color: theme-main-color !important;
+	}
+
+	/* Stats Bar Background */
+	.stats-graph {
+		background-color: theme-background-color !important;
+	}
 
 	/* Current Anime/Manga color */
 	.graph-inner.reading,
