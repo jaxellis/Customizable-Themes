@@ -490,3 +490,20 @@
 		}
 	}
 }
+
+@-moz-document regexp("http(s|)://myanimelist.net/(top)(manga|anime).php") {
+	/* Popup when hovering over a title */
+	/* They use a background image for the popup. since we can't theme that we remove the image completely then theme the popup itself. */
+	.page-common .detail .hoverinfo {
+		background: transparent !important;
+		background-image: none !important;
+		&::after {
+			display: none;
+		}
+	}
+	.hoverinfo-contaniner:has(div a) {
+		color: theme-text-color !important;
+		background-color: theme-background-color !important;
+		border-radius: 5%;
+	}
+}
