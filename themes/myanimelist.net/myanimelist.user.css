@@ -82,7 +82,7 @@
 	select {
 		background-color: theme-foreground-color !important;
 		border-color: theme-main-color !important;
-		color: theme-text-color
+		color: theme-text-color;
 	}
 
 	/* Text */
@@ -149,7 +149,7 @@
 	#headerSmall {
 		background-color: theme-foreground-color !important;
 	}
-	
+
 	/* Main Content Elements */
 	body.index .left-column {
 		border-color: theme-foreground-color !important;
@@ -157,7 +157,7 @@
 	.page-common #content {
 		border-color: theme-foreground-color;
 	}
-	
+
 	/* 2nd Header */
 	.page-common .h1 {
 		border-color: theme-foreground-color !important;
@@ -243,13 +243,13 @@
 		background: theme-background-color !important;
 		box-shadow: inset 0 0 8px theme-main-color !important;
 	}
-	
+
 	/* Header Profile Picture */
 	.header-profile-button {
 		-webkit-box-shadow: theme-main-color 0 0 0 1px inset !important;
 		box-shadow: theme-main-color 0 0 0 1px inset !important;
 	}
-	
+
 	/* Account Menu Dropdown*/
 	.header-profile-link > i:hover {
 		color: theme-main-color !important;
