@@ -112,12 +112,6 @@
 		background-color: theme-foreground-color !important;
 		border: none !important;
 	}
-	tbody tr:nth-child(odd) td {
-		background-color: lighten(theme-foreground-color, 2%) !important;
-	}
-	tbody tr:nth-child(even) td {
-		background-color: theme-foreground-color !important;
-	}
 
 	/* Only appears when logged out */
 	.external-link,
@@ -482,6 +476,36 @@
 	.left-info-block-manga-store-button {
 		background-color: theme-foreground-color !important;
 	}
+
+	/* Character Table */
+	.detail-characters-list {
+		& table:nth-child(odd) td {
+			background-color: lighten(theme-foreground-color, 2%) !important;
+		}
+		& table:nth-child(even) td {
+			background-color: theme-foreground-color !important;
+		}
+	}
+
+	/* Friend Updates */
+	.table-recently-updated tbody {
+		& tr:nth-child(odd) td {
+			background-color: lighten(theme-foreground-color, 2%) !important;
+		}
+		& tr:nth-child(even) td {
+			background-color: theme-foreground-color !important;
+		}
+	}
+
+	/* Discussion Forums */
+	.page-forum tbody {
+		& tr:nth-child(odd) td {
+			background-color: lighten(theme-foreground-color, 2%) !important;
+		}
+		& tr:nth-child(even) td {
+			background-color: theme-foreground-color !important;
+		}
+	}
 }
 
 @-moz-document regexp("http(s|)://myanimelist.net\\/news.*") {
@@ -509,7 +533,37 @@
 	}
 }
 
-@-moz-document regexp("http(s|)://myanimelist.net/(top)(manga|anime).php") {
+@-moz-document regexp("http(s|)://myanimelist.net/(top)(manga|anime).php.*") {
+	/* TOP table */
+	.top-ranking-table tbody {
+		& tr:nth-child(odd) td {
+			background-color: lighten(theme-foreground-color, 2%) !important;
+
+			/* Status Button */
+			&.status a {
+				background-color: theme-foreground-color !important;
+				color: theme-text-color !important;
+				&:hover {
+					background-color: theme-background-color !important;
+					box-shadow: inset 0 0 8px theme-main-color;
+				}
+			}
+		}
+		& tr:nth-child(even) td {
+			background-color: theme-foreground-color !important;
+
+			/* Status Button */
+			&.status a {
+				background-color: lighten(theme-foreground-color, 2%) !important;
+				color: theme-text-color !important;
+				&:hover {
+					background-color: theme-background-color !important;
+					box-shadow: inset 0 0 8px theme-main-color;
+				}
+			}
+		}
+	}
+
 	/* Popup when hovering over a title */
 	/* They use a background image for the popup. since we can't theme that we remove the image completely then theme the popup itself. */
 	.page-common .detail .hoverinfo {
