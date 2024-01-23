@@ -477,6 +477,24 @@
 		background-color: theme-foreground-color !important;
 	}
 
+	/* Score Stats */
+	.anime-detail-header-stats {
+		.user-status-block,
+		.stats-block {
+			background-color: theme-foreground-color !important;
+
+			/* Buttons/Options buttons */
+			& .myinfo_addtolist,
+			select#myinfo_status,
+			select#myinfo_score,
+			.form-user-episode {
+				background-color: theme-background-color !important;
+				border-color: theme-main-color !important;
+				color: theme-text-color !important;
+			}
+		}
+	}
+
 	/* Character Table */
 	.detail-characters-list {
 		& table:nth-child(odd) td {
@@ -495,6 +513,13 @@
 		& tr:nth-child(even) td {
 			background-color: theme-foreground-color !important;
 		}
+	}
+
+	/* Reviews */
+	.manga-info-review__header,
+	.anime-info-review__header,
+	.review-element {
+		background-color: theme-foreground-color !important;
 	}
 
 	/* Discussion Forums */
