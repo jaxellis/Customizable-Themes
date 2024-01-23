@@ -143,6 +143,9 @@
 	#headerSmall {
 		background-color: theme-foreground-color !important;
 	}
+	.page-common .h1 {
+		background-color: theme-background-color !important;
+	}
 
 	/* Main Content Elements */
 	body.index .left-column {
