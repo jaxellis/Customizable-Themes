@@ -620,3 +620,17 @@
 		background-color: theme-foreground-color !important;
 	}
 }
+
+@-moz-document regexp("http(s|)://myanimelist.net/login.php.*") {
+	/* Input Boxes & Login button */
+	.login-form-block .pt16 input {
+		background-color: theme-background-color !important;
+	}
+
+	/* Social Login (Google) */
+	.page-common .line .icon-social-login.icon-gp {
+		background-color: theme-background-color !important;
+		color: theme-text-color !important;
+	}
+}
+
