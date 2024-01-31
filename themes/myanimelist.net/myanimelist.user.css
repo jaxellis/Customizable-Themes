@@ -98,6 +98,8 @@
 	/* 'Success' box */
 	#content .goodresult {
 		background-color: theme-foreground-color !important;
+		/* Required for Dark mode */
+		border-color: theme-main-color !important;
 	}
 
 	/* Default Table Theming */
