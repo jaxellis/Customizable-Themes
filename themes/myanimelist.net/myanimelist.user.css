@@ -634,3 +634,118 @@
 	}
 }
 
+@-moz-document regexp("http(s|)://myanimelist.net/apiconfig/references.*") {
+	/* Header Text */
+	h1,
+	h2,
+	h3,
+	h5 {
+		color: theme-main-color !important;
+	}
+
+	/* Left Sidebar */
+	.menu-content {
+		background-color: theme-foreground-color;
+	}
+
+	/* Left Sidebar Label */
+	ul[role='navigation'] li {
+		/* .active for active tab \\// use :not in order to deselect entire dropdown lists */
+		& label.active,
+		:hover:not(ul) {
+			background-color: lighten(theme-foreground-color, 5%);
+		}
+	}
+
+	/* Left Sidebar Link */
+	.gKXwn {
+		a,
+		a:visited,
+		a:hover {
+			color: theme-main-color !important;
+		}
+	}
+
+	/* Search Results */
+	[data-role='search:results'] {
+		background-color: lighten(theme-foreground-color, 2%);
+	}
+
+	/* Code Boxes */
+	pre {
+		background-color: theme-foreground-color !important;
+	}
+	.bHzJuy pre code {
+		color: theme-text-color;
+		border: none;
+	}
+	code {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Middle/Right Sections */
+	.api-content {
+		background-color: theme-background-color;
+	}
+
+	/* Right Side section boxes*/
+	.gcushC {
+		background-color: theme-background-color;
+	}
+
+	/* "get"/"post" buttons w/ api url */
+	.jdCbTS {
+		& > button,
+		> div {
+			background-color: theme-foreground-color !important;
+
+			/* URL Text box */
+			& div[role='button'] > div {
+				background-color: lighten(theme-foreground-color, 5%) !important;
+				color: theme-main-color !important;
+			}
+		}
+	}
+
+	/* Right sidebar panels */
+	.react-tabs__tab-panel {
+		background-color: theme-foreground-color !important;
+
+		& pre,
+		div > div {
+			background-color: lighten(theme-foreground-color, 5%) !important;
+		}
+	}
+
+	/* Dropdown Box / Options */
+	.dropdown-selector-content,
+	.dropdown-option {
+		background-color: lighten(theme-foreground-color, 5%) !important;
+
+		&:hover {
+			background-color: theme-background-color !important;
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
+	}
+
+	/* Table Theming */
+	table {
+		& tr:nth-child(odd) {
+			background-color: lighten(theme-foreground-color, 2%) !important;
+		}
+		& tr:nth-child(even) {
+			background-color: theme-foreground-color !important;
+		}
+		& td,
+		th {
+			border-color: theme-background-color !important;
+		}
+	}
+
+	/* React Tab (curl / HTTP status code) */
+	.react-tabs__tab,
+	.react-tabs__tab--selected {
+		background-color: theme-foreground-color !important;
+		color: theme-main-color !important;
+	}
+}
