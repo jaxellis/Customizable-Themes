@@ -62,14 +62,14 @@
 	/* Select Boxes */
 	select {
 		background-color: theme-foreground-color !important;
-		border-color: theme-main-color !important;
 		color: theme-text-color;
 	}
 
 	/* Text */
+	/* sceditor = comment editor */
 	div,
 	p,
-	span,
+	span:not(.sceditor-outer *),
 	.text {
 		color: theme-text-color !important;
 	}
@@ -78,13 +78,16 @@
 	input,
 	textarea {
 		background-color: theme-foreground-color !important;
-		border-color: theme-main-color !important;
 		color: theme-text-color !important;
+	}
+	/* Borders */
+	* {
+		border-color: theme-main-color !important;
 	}
 
 	/* 'Success' box */
 	.goodresult {
-		border-color: theme-main-color !important;
+		background-color: theme-foreground-color !important;
 	}
 
 	/* Default Table Theming */
@@ -132,9 +135,6 @@
 	body.index .left-column {
 		border-color: theme-foreground-color !important;
 	}
-	.page-common #content {
-		border-color: theme-foreground-color;
-	}
 
 	/* 2nd Header */
 	.page-common .h1 {
@@ -149,13 +149,9 @@
 		background: theme-foreground-color !important;
 	}
 
-	#horiznav_nav {
-		border-color: theme-main-color !important;
-
-		&.horiznav_active {
-			background-color: theme-background-color !important;
-			color: theme-text-color !important;
-		}
+	#horiznav_nav.horiznav_active {
+		background-color: theme-background-color !important;
+		color: theme-text-color !important;
 	}
 
 	#horiznav_nav li {
@@ -183,7 +179,6 @@
 
 	/* Search Bar */
 	.page-common #topSearchText {
-		border-color: theme-main-color !important;
 		background-color: theme-background-color !important;
 		color: theme-text-color !important;
 	}
@@ -197,7 +192,6 @@
 	/* Yeah they misspelled button */
 	#topSearchButon {
 		background-color: theme-background-color !important;
-		border-color: theme-main-color !important;
 	}
 
 	/* Search Results */
@@ -281,7 +275,6 @@
 	/* Border/Background for Below Elements  */
 	.work-graph {
 		background-color: theme-foreground-color !important;
-		border-color: theme-main-color !important;
 	}
 
 	/* The below only works with a single element, combining CW/CR or PTR/PTW will break */
@@ -422,7 +415,6 @@
 	/* Bar Background */
 	.profile .statistics-updates .graph {
 		background-color: theme-foreground-color !important;
-		border-color: theme-main-color !important;
 	}
 
 	/* Stats Bar Background */
@@ -453,7 +445,6 @@
 	div.profileRows a,
 	div#profileRows a {
 		background-color: theme-foreground-color !important;
-		border-color: theme-main-color !important;
 
 		&:hover {
 			box-shadow: inset 0 0 8px theme-main-color;
@@ -483,7 +474,6 @@
 			select#myinfo_score,
 			.form-user-episode {
 				background-color: theme-background-color !important;
-				border-color: theme-main-color !important;
 				color: theme-text-color !important;
 			}
 		}
