@@ -567,6 +567,46 @@
 }
 
 @-moz-document regexp("http(s|)://myanimelist.net\\/news.*") {
+	/* News Container */
+	.news-container {
+		/* Header */
+		& .news-info-block {
+			background-color: theme-foreground-color !important;
+		}
+		/* Footer */
+		& .tags {
+			background-color: theme-background-color !important;
+
+			/* Buttons */
+			& a {
+				background-color: theme-foreground-color !important;
+
+				&:hover {
+					box-shadow: inset 0 0 8px theme-main-color;
+				}
+			}
+		}
+	}
+
+	/* Search News Icon Button */
+	.featured-search-input-submit {
+		background-color: theme-foreground-color !important;
+
+		&:hover {
+			background-color: theme-background-color !important;
+			box-shadow: inset 0 0 6px theme-main-color;
+		}
+	}
+
+	/* Trending Tag Buttons */
+	.tag-side-block .tag-cloud a {
+		background-color: theme-foreground-color !important;
+
+		&:hover {
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
+	}
+
 	if wide-mode-enabled==1 {
 		/* Wide Mode */
 		/* News Page Left Column */
