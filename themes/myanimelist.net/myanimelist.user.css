@@ -86,7 +86,7 @@
 	}
 
 	/* 'Success' box */
-	.goodresult {
+	#content .goodresult {
 		background-color: theme-foreground-color !important;
 	}
 
