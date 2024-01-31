@@ -24,25 +24,6 @@
 ==/UserStyle== */
 @-moz-document regexp("http(s|)://myanimelist.net\\/(?!animelist|mangalist).*") {
 	/* We use regex here to not overwrite custom list themes */
-	:root {
-		if wide-mode-enabled==1 {
-			/* 1440p (ish) */
-			@media (min-width: 2115px) {
-				--left-column-width: 88%;
-			}
-
-			/* 1080p (ish) */
-			@media (min-width: 1600px) and (max-width: 2114px) {
-				--left-column-width: 85%;
-			}
-
-			/* >1080p (ish) */
-			@media (max-width: 1599px) {
-				--left-column-width: 65%;
-			}
-		}
-	}
-
 	/* Theme Coloring */
 	/* Main Body */
 	#contentWrapper,
@@ -247,7 +228,7 @@
 		box-shadow: theme-main-color 0 0 0 1px inset !important;
 	}
 
-	/* Account Menu Dropdown*/
+	/* Account Menu Dropdown */
 	.header-profile-link > i:hover {
 		color: theme-main-color !important;
 	}
@@ -381,14 +362,24 @@
 			width: 100% !important;
 		}
 
-		/* Main Page Seasonal Anime Carousel */
+		/* Main Content div */
+		body.index #content {
+			max-width: 100% !important;
+		}
+		/* Main Left Column */
 		body.index .left-column {
-			width: var(--left-column-width) !important;
+			width: 100% !important;
 		}
-		.widget-slide-block .widget-slide-outer {
-			width: unset !important;
-		}
+		/* Carousel */
+		.widget-slide-outer {
+			width: 100% !important;
 
+			& .widget-slide {
+				width: 100% !important;
+				padding-inline-start: 40px;
+			}
+		}
+		/* News */
 		.news-list .news-unit {
 			width: unset !important;
 		}
@@ -541,7 +532,7 @@
 		/* Wide Mode */
 		/* News Page Left Column */
 		.news-content-block .content-left {
-			width: var(--left-column-width) !important;
+			width: 100% !important;
 		}
 
 		/* News Page Bredcrumbs */
@@ -567,7 +558,7 @@
 		background-color: theme-foreground-color !important;
 		border: 1px solid theme-main-color;
 	}
-	
+
 	/* TOP table */
 	.top-ranking-table tbody {
 		& tr:nth-child(odd) td {
