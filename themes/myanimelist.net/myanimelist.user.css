@@ -85,6 +85,15 @@
 		border-color: theme-main-color !important;
 	}
 
+	/* Headers */
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		color: theme-text-color !important;
+	}
+
 	/* 'Success' box */
 	#content .goodresult {
 		background-color: theme-foreground-color !important;
