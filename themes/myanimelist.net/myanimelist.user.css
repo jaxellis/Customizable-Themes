@@ -426,6 +426,37 @@
 		background-color: transparent !important;
 	}
 
+	/* Comment Editor */
+	.sceditor-outer {
+		& .sceditor-tabs .active {
+			background-color: theme-foreground-color !important;
+		}
+		& .mal-tab-item {
+			&.edit div {
+				background-color: theme-foreground-color !important;
+			}
+			&.preview {
+				background-color: theme-foreground-color !important;
+			}
+		}
+		& .sceditor-button > div::before {
+			color: theme-main-color;
+		}
+		& .sceditor-button:hover,
+		.sceditor-button:active,
+		.sceditor-button.active {
+			background-color: theme-background-color !important;
+			box-shadow: inset 0 0 8px theme-main-color !important;
+		}
+	}
+
+	/* Comments */
+	.user-comments .comment {
+		background-color: theme-foreground-color !important;
+		border-bottom: 1px solid theme-main-color;
+	}
+
+
 	/* Wide Mode */
 	if wide-mode-enabled==1 {
 		/* Profile Stats Bar  */
@@ -436,6 +467,16 @@
 		.stats-graph {
 			display: flex !important;
 			justify-content: space-between;
+		}
+		/* Comments */
+		.user-comments .comment {
+			display: flex;
+
+			& .text {
+				width: 100% !important;
+				display: flex !important;
+				flex-direction: column;
+			}
 		}
 	}
 }
