@@ -834,3 +834,46 @@
 		color: theme-main-color !important;
 	}
 }
+
+@-moz-document regexp("http(s|)://myanimelist.net/(anime|manga).php") {
+	/* "Genre" Tags List Columns */
+	.genre-list-col {
+		/* Genre Tags List */
+		& .genre-list {
+			background-color: theme-foreground-color !important;
+
+			/* We switch the hover to this element so the padding also gets theme'd */
+			&:hover {
+				background-color: theme-background-color !important;
+				box-shadow: inset 0 0 8px theme-main-color;
+			}
+
+			/* Individual Genre Tag */
+			& .genre-name-link {
+				padding: 8px 0 8px 16px !important;
+
+				/* Need to set the default hover transparent so the other hover works */
+				&:hover {
+					background-color: transparent !important;
+				}
+			}
+		}
+
+		/* last tag column has a 0 width border, since we need this for wide mode we add it back */
+		&:last-of-type .genre-list {
+			border-bottom-width: 1px !important;
+		}
+	}
+
+	/* Wide Mode */
+	if wide-mode-enabled==1 {
+		/* Genre Tags */
+		.anime-manga-search .genre-link,
+		.genre-list-col {
+			display: flex !important;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: stretch;
+		}
+	}
+}
