@@ -115,7 +115,10 @@
 
 	/* Borders */
 	* {
-		border-color: theme-main-color !important;
+		border-top-color: theme-main-color !important;
+		border-bottom-color: theme-main-color !important;
+		border-left-color: theme-main-color !important;
+		border-right-color: theme-main-color !important;
 	}
 
 	/* Headers */
