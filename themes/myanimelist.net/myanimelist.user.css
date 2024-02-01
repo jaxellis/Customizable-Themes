@@ -22,6 +22,38 @@
 @var color  	theme-dropped-color		"Dropped"       				rgba(255, 0, 0, 1)
 
 ==/UserStyle== */
+@-moz-document regexp("http(s|)://myanimelist.net/") {
+	/* Main Content Elements */
+	body.index .left-column {
+		border-color: theme-foreground-color !important;
+	}
+
+	/* Wide Mode */
+	if wide-mode-enabled==1 {
+		/* Main Left Column */
+		body.index .left-column {
+			width: 100% !important;
+		}
+
+		/* Carousel */
+		/* widget-slide-block = Latest Updated Epsisodes Videos */
+		/* Manga Store is limited so it won't go to the end, Carousel is useless ... */
+		.widget-slide-outer,
+		.widget-slide-block {
+			width: 100% !important;
+
+			& .widget-slide {
+				width: 105% !important;
+			}
+		}
+
+		/* News */
+		.news-list .news-unit {
+			width: unset !important;
+		}
+	}
+}
+
 @-moz-document regexp("http(s|)://myanimelist.net\\/(?!animelist|mangalist).*") {
 	/* We use regex here to not overwrite custom list themes */
 	/* Theme Coloring */
@@ -138,11 +170,6 @@
 	/* Header */
 	#headerSmall {
 		background-color: theme-foreground-color !important;
-	}
-
-	/* Main Content Elements */
-	body.index .left-column {
-		border-color: theme-foreground-color !important;
 	}
 
 	/* 2nd Header */
@@ -369,23 +396,6 @@
 		body.index #content {
 			max-width: 100% !important;
 		}
-		/* Main Left Column */
-		body.index .left-column {
-			width: 100% !important;
-		}
-		/* Carousel */
-		.widget-slide-outer {
-			width: 100% !important;
-
-			& .widget-slide {
-				width: 100% !important;
-				padding-inline-start: 40px;
-			}
-		}
-		/* News */
-		.news-list .news-unit {
-			width: unset !important;
-		}
 	}
 }
 
@@ -465,7 +475,6 @@
 		background-color: theme-foreground-color !important;
 		border-bottom: 1px solid theme-main-color;
 	}
-
 
 	/* Wide Mode */
 	if wide-mode-enabled==1 {
