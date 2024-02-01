@@ -503,7 +503,7 @@
 	}
 }
 
-@-moz-document regexp("http(s|)://myanimelist.net\\/(manga|anime).*") {
+@-moz-document regexp("http(s|)://myanimelist.net/(manga|anime)/\d.*") {
 	/* "Add to" Buttons */
 	div.profileRows a,
 	div#profileRows a {
