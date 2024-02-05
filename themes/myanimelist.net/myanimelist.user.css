@@ -28,6 +28,20 @@
 		border-color: theme-foreground-color !important;
 	}
 
+	/* "Top Upcoming X" */
+	.ranking-digest {
+		background-color: theme-background-color !important;
+	}
+	.ranking-header,
+	.widget-header {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Recent Friend Updates Footer */
+	.footer {
+		background-color: theme-foreground-color !important;
+	}
+
 	/* Wide Mode */
 	if wide-mode-enabled==1 {
 		/* Main Left Column */
