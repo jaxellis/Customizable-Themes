@@ -8,4 +8,4 @@ This MAL theme allows you to customize the background, foreground, text, and acc
 
 # Installation
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/jaxellis/Customizable-Themes/tree/main/themes/myanimelist.net/myanimelist.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://github.com/jaxellis/Customizable-Themes/raw/main/themes/myanimelist.net/myanimelist.user.css)
