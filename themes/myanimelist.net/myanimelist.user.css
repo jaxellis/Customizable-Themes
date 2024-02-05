@@ -11,6 +11,7 @@
 
 @preprocessor   stylus
 @var checkbox	wide-mode-enabled		"Wide Mode"       				1
+@var select 	modcolor				"Color Theme"					["lighten:Dark theme", "darken:Light theme"]
 @var color		theme-background-color	"Background"       				rgba(0, 0, 0, 1)
 @var color  	theme-foreground-color	"Foreground"       				rgba(10, 10, 10, 1)
 @var color  	theme-main-color        "Main Accent"      				rgba(0, 255, 255, 1)
@@ -559,7 +560,7 @@
 	/* Character Table */
 	.detail-characters-list {
 		& table:nth-child(odd) td {
-			background-color: lighten(theme-foreground-color, 2%) !important;
+			background-color: modcolor(theme-foreground-color, 2%) !important;
 		}
 		& table:nth-child(even) td {
 			background-color: theme-foreground-color !important;
@@ -569,7 +570,7 @@
 	/* Friend Updates */
 	.table-recently-updated tbody {
 		& tr:nth-child(odd) td {
-			background-color: lighten(theme-foreground-color, 2%) !important;
+			background-color: modcolor(theme-foreground-color, 2%) !important;
 		}
 		& tr:nth-child(even) td {
 			background-color: theme-foreground-color !important;
@@ -586,7 +587,7 @@
 	/* Discussion Forums */
 	.page-forum tbody {
 		& tr:nth-child(odd) td {
-			background-color: lighten(theme-foreground-color, 2%) !important;
+			background-color: modcolor(theme-foreground-color, 2%) !important;
 		}
 		& tr:nth-child(even) td {
 			background-color: theme-foreground-color !important;
@@ -669,7 +670,7 @@
 	/* TOP table */
 	.top-ranking-table tbody {
 		& tr:nth-child(odd) td {
-			background-color: lighten(theme-foreground-color, 2%) !important;
+			background-color: modcolor(theme-foreground-color, 2%) !important;
 
 			/* Status Button */
 			&.status a {
@@ -686,7 +687,7 @@
 
 			/* Status Button */
 			&.status a {
-				background-color: lighten(theme-foreground-color, 2%) !important;
+				background-color: modcolor(theme-foreground-color, 2%) !important;
 				color: theme-text-color !important;
 
 				&:hover {
@@ -752,7 +753,7 @@
 		/* .active for active tab \\// use :not in order to deselect entire dropdown lists */
 		& label.active,
 		:hover:not(ul) {
-			background-color: lighten(theme-foreground-color, 5%);
+			background-color: modcolor(theme-foreground-color, 5%);
 		}
 	}
 
@@ -767,7 +768,7 @@
 
 	/* Search Results */
 	[data-role='search:results'] {
-		background-color: lighten(theme-foreground-color, 2%);
+		background-color: modcolor(theme-foreground-color, 2%);
 	}
 
 	/* Code Boxes */
@@ -800,7 +801,7 @@
 
 			/* URL Text box */
 			& div[role='button'] > div {
-				background-color: lighten(theme-foreground-color, 5%) !important;
+				background-color: modcolor(theme-foreground-color, 5%) !important;
 				color: theme-main-color !important;
 			}
 		}
@@ -812,14 +813,14 @@
 
 		& pre,
 		div > div {
-			background-color: lighten(theme-foreground-color, 5%) !important;
+			background-color: modcolor(theme-foreground-color, 5%) !important;
 		}
 	}
 
 	/* Dropdown Box / Options */
 	.dropdown-selector-content,
 	.dropdown-option {
-		background-color: lighten(theme-foreground-color, 5%) !important;
+		background-color: modcolor(theme-foreground-color, 5%) !important;
 
 		&:hover {
 			background-color: theme-background-color !important;
@@ -830,7 +831,7 @@
 	/* Table Theming */
 	table {
 		& tr:nth-child(odd) {
-			background-color: lighten(theme-foreground-color, 2%) !important;
+			background-color: modcolor(theme-foreground-color, 2%) !important;
 		}
 		& tr:nth-child(even) {
 			background-color: theme-foreground-color !important;
