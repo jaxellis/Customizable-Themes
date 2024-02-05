@@ -29,7 +29,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 		</tr>
 		<tr>
 			<td>
-				<a href="https://www.anilist.co/"><img src="https://www.google.com/s2/favicons?domain=anilist.co/"> Anilist</a>
+				<a href="https://anilist.co/"><img src="https://www.google.com/s2/favicons?domain=anilist.co/"> Anilist</a>
 			</td>
 			<td>
 				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/anilist.co/"> 1.0.0</a>
@@ -53,7 +53,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 		</tr>
 		<tr>
 			<td>
-				<a href="https://www.lotro-wiki.com/"><img src="https://www.google.com/s2/favicons?domain=lotro-wiki.com"/> Lotro Wiki</a>
+				<a href="https://lotro-wiki.com/"><img src="https://www.google.com/s2/favicons?domain=lotro-wiki.com"/> Lotro Wiki</a>
 			</td>
 			<td>
 				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/lotro-wiki.com/"> 1.0.0</a>
@@ -61,7 +61,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 		</tr>
 		<tr>
 			<td>
-				<a href="https://www.myanimelist.net/"><img src="https://www.google.com/s2/favicons?domain=myanimelist.net"/> MyAnimeList</a>
+				<a href="https://myanimelist.net/"><img src="https://www.google.com/s2/favicons?domain=myanimelist.net"/> MyAnimeList</a>
 			</td>
 			<td>
 				<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/myanimelist.net/"> 1.1.0</a>
