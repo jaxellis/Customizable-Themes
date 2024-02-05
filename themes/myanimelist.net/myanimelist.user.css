@@ -892,3 +892,94 @@
 		}
 	}
 }
+@-moz-document regexp("http(s|)://myanimelist.net/forum.*") {
+	/* Forum navbar */
+	.mal-navbar {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Post Header */
+	.message-header {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Topic List Header */
+	.forum-topic-sort {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Topic Row Header */
+	.forum-table-header {
+		background-color: theme-foreground-color !important;
+		& td {
+			color: theme-text-color !important;
+		}
+	}
+
+	/* Topic Rows */
+	tr[data-topic-id] {
+		&:nth-of-type(even) td {
+			background-color: modcolor(theme-foreground-color, 3%) !important;
+		}
+		&:nth-of-type(odd) td {
+			background-color: theme-foreground-color !important;
+		}
+
+		/* Stickied Topics */
+		&:has(.forum_board_row_sticky),
+		&:has(.forum_board_row_rules) {
+			& td {
+				background-color: modcolor(theme-foreground-color, 9%) !important;
+			}
+		}
+	}
+
+	/* Un-Watched Topic Icon */
+	.js-watch-topic-button i[title='You are not watching this topic'] {
+		color: theme-text-color !important;
+	}
+
+	/* User Profile on Posts */
+	.message-wrapper > .profile {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Quoted Content */
+	.replied {
+		background-color: modcolor(theme-foreground-color, 3%) !important;
+	}
+
+	/* Topic Layout Switcher */
+	.mal-btn.primary {
+		/* Active Button */
+		&:not(.outline) {
+			background-color: modcolor(theme-foreground-color, 3%) !important;
+			box-shadow: inset 0 0 8px theme-main-color;
+		}
+
+		/* Non-active button */
+		&.outline {
+			background-color: theme-foreground-color !important;
+		}
+	}
+
+	/* Category Headers */
+	.forum-header {
+		background-color: theme-foreground-color !important;
+	}
+
+	/* Categories */
+	.forum-board {
+		&:nth-of-type(even) {
+			background-color: theme-foreground-color !important;
+		}
+		&:nth-of-type(odd) {
+			background-color: modcolor(theme-foreground-color, 3%) !important;
+		}
+	}
+
+	/* Advanced Search */
+	.page-common div.ar a.fn-blue1 {
+		color: theme-main-color !important;
+	}
+}
