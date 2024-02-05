@@ -69,7 +69,7 @@ Collection of customizable themes for sites I visit. :root variables allowing fo
 						<img src="https://www.google.com/s2/favicons?domain=myanimelist.net"/> MyAnimeList</a>
 				</td>
 				<td>
-					<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/myanimelist.net/"> 1.1.0</a>
+					<a href="https://github.com/jaxellis/Customizable-Themes/tree/main/themes/myanimelist.net/"> 1.1.1</a>
 				</td>
 			</tr>
 		</tbody>
